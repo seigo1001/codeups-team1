@@ -1,0 +1,18 @@
+.p-footer{
+    background-color: #111111;
+    text-align: center;
+    padding: rem(48) rem(0);
+}
+
+.p-footer__items{
+    margin-top: rem(8);
+    margin-bottom: rem(32);
+}
+
+.c-footer__item{
+    color: #ffffff;
+    font-size: 16px;
+    list-style-type: none;
+    margin-bottom: rem(8);
+    font-family: $font-family-base;
+}
