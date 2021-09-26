@@ -1,0 +1,36 @@
+.c-pagination{
+    background: #111111;
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    max-width: rem(340);
+    width: 89%;
+    margin: 0 auto;
+}
+
+.c-pagination__prev,
+.c-pagination__next,
+.c-pagination__page{
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+}
+
+.c-pagination__pages{
+    display: flex;
+    margin-left: rem(24);
+    margin-right: rem(24);
+}
+
+.c-pagination__prev,
+.c-pagination__next{
+    padding: rem(1) rem(13);
+}
+
+.c-pagination__page{
+    margin-right: rem(16);
+    padding: rem(1) rem(8);
+}
+
+.c-pagination__page:last-child{
+    margin-right: rem(0);
+}
