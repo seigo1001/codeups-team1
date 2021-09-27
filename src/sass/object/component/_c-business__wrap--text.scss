@@ -1,0 +1,18 @@
+.c-business__wrap--text{
+    padding: 0 rem(20);
+    color: #ffffff;
+    @include mq(){
+        padding: 0 0;
+        text-align: left;
+    }
+}
+.c-business__wrap--header{
+    font-size: rem(25);
+    text-align: center;
+    @include mq(){
+        font-size: rem(20);
+    }
+}
+.c-business__wrap--body{
+    font-size: rem(16);
+}

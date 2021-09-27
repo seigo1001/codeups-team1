@@ -1,0 +1,19 @@
+.c-map{
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 300px;
+    position: relative;
+    @include mq(){
+        max-width: 1100px;
+        width: 80%;
+        padding-bottom: 367px;
+    }
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

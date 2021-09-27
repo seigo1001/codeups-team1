@@ -1,0 +1,57 @@
+.l-news{
+    .c-subfv{
+        background-image: url(../../../images/common/information_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/information_mv_pc.jpg);
+        }
+    }
+}
+.l-business{
+    .c-subfv{
+        background-image: url(../../../images/common/business_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/business_mv_pc.jpg);
+        }
+    }
+}
+.l-works{
+    .c-subfv{
+        background-image: url(../../../images/common/works_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/works_mv_pc.jpg);
+        }
+    }
+}
+.l-about{
+    .c-subfv{
+        background-image: url(../../../images/common/about_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/about_mv_pc.jpg);
+        }
+    }
+}
+.l-blog{
+    .c-subfv{
+        background-image: url(../../../images/common/blog_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/blog_mv_pc.jpg);
+        }
+    }
+}
+.l-contact{
+    .c-subfv{
+        background-image: url(../../../images/common/contact_mv_sp.jpg);
+        @include mq(){
+            background-image: url(../../../images/common/contact_mv_pc.jpg);
+        }
+    }
+}
+
+
+.l-news, .l-business, .l-works, .l-about, .l-blog, .l-contact{
+    .c-subfv{
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 185px 0;
+    }
+}
