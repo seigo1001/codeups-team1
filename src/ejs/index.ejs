@@ -2,8 +2,10 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
+    <div style="background-color:#333;" class="bg">
     <%- include('./common/_top-header') %>
       <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
+      <%- include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
     <%- include('./common/_footer') %>
 
     <!-- ページネーション表示テスト用（後で消す） -->
@@ -34,7 +36,7 @@
     <!-- <% for (var i=0; i < 4; i++) { %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
       <% } %> -->
-
+    </div>
   <script>
     <%- include('../js/swiper.js') %>
   </script>
