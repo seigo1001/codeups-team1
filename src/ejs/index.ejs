@@ -9,7 +9,7 @@
     <!-- ページネーション表示テスト用（後で消す） -->
     <!-- <%- include('./parts/_c-pagination') %>
     <%- include('./parts/_c-pagination-simple') %> -->
-    <%- include('./parts/_c-swipersample') %>
+    <!-- <%- include('./parts/_c-swipersample') %> -->
     <!-- <%- include('./parts/_c-map') %> -->
         <!-- 下層ページFV -->
     <!-- <section class="l-news sublayer">
@@ -37,30 +37,30 @@
 
   <script>
     // <%- include('../js/swiper.js') %>
-    var slider = new Swiper ('.gallery-slider', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 6, //スライドの枚数と同じ値を指定
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    });
+    // var slider = new Swiper ('.gallery-slider', {
+    // slidesPerView: 1,
+    // centeredSlides: true,
+    // loop: true,
+    // loopedSlides: 6, //スライドの枚数と同じ値を指定
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    // });
 
-    //サムネイル
-    var thumbs = new Swiper ('.gallery-thumbs', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    centeredSlides: true,
-    loop: true,
-    slideToClickedSlide: true,
-    });
+    // //サムネイル
+    // var thumbs = new Swiper ('.gallery-thumbs', {
+    // slidesPerView: 'auto',
+    // spaceBetween: 10,
+    // centeredSlides: true,
+    // loop: true,
+    // slideToClickedSlide: true,
+    // });
 
-    //4系～
-    //メインとサムネイルを紐づける
-    slider.controller.control = thumbs;
-    thumbs.controller.control = slider;
+    // //4系～
+    // //メインとサムネイルを紐づける
+    // slider.controller.control = thumbs;
+    // thumbs.controller.control = slider;
   </script>
   </body>
 </html>

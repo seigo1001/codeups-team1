@@ -2,11 +2,27 @@
     background-color: #111111;
     text-align: center;
     padding: rem(48) rem(0);
+    @include mq(){
+        padding-left: rem(32);
+        padding-right: rem(32);
+    }
+}
+
+.p-footer__wrapper{
+    @include mq(){
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(75);
+    }
 }
 
 .p-footer__items{
     margin-top: rem(8);
     margin-bottom: rem(32);
+    @include mq(){
+        display: flex;
+        margin-bottom: rem(0);
+    }
 }
 
 .c-footer__item{
@@ -15,4 +31,8 @@
     list-style-type: none;
     margin-bottom: rem(8);
     font-family: $font-family-base;
+    @include mq(){
+        margin-bottom: rem(0);
+        margin-right: rem(32);
+    }
 }
