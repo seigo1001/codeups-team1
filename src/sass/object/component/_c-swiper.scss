@@ -1,6 +1,7 @@
-.gallery {
+.c-gallery {
     width: 100%;
-    max-width: 620px;
+    max-width: 800px;
+    width: 100%;
     margin: 40px auto;
     
     //メインスライド
@@ -8,14 +9,29 @@
         width: 100%;
         height: auto;
         margin: 0 0 10px 0;
-
+        position: relative;
+        .swiper-wrapper{
+            overflow: hidden;
+        }
+        .swiper-button-prev,
+        .swiper-button-next{
+            width: 50px;
+            height: 50px;
+            background: #111111;
+            color: #FFEA2E;
+            border-radius: 50%;
+        }
+        .swiper-button-prev::after,
+        .swiper-button-next::after{
+            font-size: rem(35);
+        }
         .swiper-slide {
-            width: auto;
+            width: 100%;
             height: 400px;
             
             img {
                 display: block;
-                width: auto;
+                width: 100%;
                 height: 100%;
                 margin: 0 auto;
             }
@@ -29,11 +45,17 @@
         overflow: hidden;
 
         .swiper-slide {
-            width: 100px;
-            height: 100px;
+            width: 163px;
+            height: 163px;
             text-align: center;
             overflow: hidden;
             opacity: .1;
+            margin-right: rem(24);
+            @include mq(){
+                width: 100px;
+                height: 100px;
+                margin-right: rem(0);
+            }
             
             &-active {
                 opacity: 1;
@@ -44,5 +66,20 @@
                 height: 100%;
             }
         }
+    }
+}
+
+.pc-only{
+    display: none;
+}
+.sp-only{
+    display: block;
+}
+@include mq(){
+    .pc-only{
+        display: block;
+    }
+    .sp-only{
+        display: none;
     }
 }

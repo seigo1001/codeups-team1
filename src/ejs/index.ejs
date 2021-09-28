@@ -4,63 +4,38 @@
   <body>
     <%- include('./common/_top-header') %>
       <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
+      <!-- ページネーション表示テスト用（後で消す） -->
+      <!-- <%- include('./parts/_c-pagination') %>
+      <%- include('./parts/_c-pagination-simple') %> -->
+
+      <!-- Swiper表示テスト用（後で消す） -->
+      <%- include('./parts/_c-swiper') %>
+
+      <!-- Google Map表示テスト用（後で消す） -->
+      <!-- <%- include('./parts/_c-map') %> -->
+
+      <!-- 下層ページのFV表示テスト用（後で消す） -->
+      <!-- <section class="l-news sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
+      </section>
+      <section class="l-business sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'事業内容'}) %>
+      </section>
+      <section class="l-works sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
+      </section>
+      <section class="l-about sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'企業概要'}) %>
+      </section>
+      <section class="l-blog sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
+      </section>
+      <section class="l-contact sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'お問い合わせ'}) %>
+      </section> -->
+
     <%- include('./common/_footer') %>
 
-    <!-- ページネーション表示テスト用（後で消す） -->
-    <!-- <%- include('./parts/_c-pagination') %>
-    <%- include('./parts/_c-pagination-simple') %> -->
-    <!-- <%- include('./parts/_c-swipersample') %> -->
-    <!-- <%- include('./parts/_c-map') %> -->
-        <!-- 下層ページFV -->
-    <!-- <section class="l-news sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
-    </section>
-    <section class="l-business sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'事業内容'}) %>
-    </section>
-    <section class="l-works sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
-    </section>
-    <section class="l-about sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'企業概要'}) %>
-    </section>
-    <section class="l-blog sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
-    </section>
-    <section class="l-contact sublayer">
-      <%- include('./parts/_c-subFV', {pageTitle:'お問い合わせ'}) %>
-    </section> -->
-
-    <!-- <% for (var i=0; i < 4; i++) { %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %> -->
-
-  <script>
-    // <%- include('../js/swiper.js') %>
-    // var slider = new Swiper ('.gallery-slider', {
-    // slidesPerView: 1,
-    // centeredSlides: true,
-    // loop: true,
-    // loopedSlides: 6, //スライドの枚数と同じ値を指定
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
-    // });
-
-    // //サムネイル
-    // var thumbs = new Swiper ('.gallery-thumbs', {
-    // slidesPerView: 'auto',
-    // spaceBetween: 10,
-    // centeredSlides: true,
-    // loop: true,
-    // slideToClickedSlide: true,
-    // });
-
-    // //4系～
-    // //メインとサムネイルを紐づける
-    // slider.controller.control = thumbs;
-    // thumbs.controller.control = slider;
-  </script>
+  <!-- <script src="../js/swiper.js"></script> -->
   </body>
 </html>

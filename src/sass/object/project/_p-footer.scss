@@ -12,7 +12,13 @@
     @include mq(){
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: rem(75);
+    }
+    img {
+        @include mq(){
+            height: rem(38);
+        }
     }
 }
 
