@@ -13,7 +13,7 @@ var slider = new Swiper ('.swiper-container', {
     });
 
     //サムネイル
-    var thumbs = new Swiper ('.c-gallery-thumbs', {
+    var thumbs = new Swiper ('.gallery-thumbs', {
         slidesPerView: 'auto',
         spaceBetween: 10,
         centeredSlides: true,
