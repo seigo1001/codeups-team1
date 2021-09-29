@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
-      <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
-      <!-- ページネーション表示テスト用（後で消す） -->
-      <!-- <%- include('./parts/_c-pagination') %>
+    <%- include('./common/_header') %> <%-
+    include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
+    <!-- ページネーション表示テスト用（後で消す） -->
+    <!-- <%- include('./parts/_c-pagination') %>
       <%- include('./parts/_c-pagination-simple') %> -->
 
-      <!-- Swiper表示テスト用（後で消す） -->
-      <%- include('./parts/_c-swiper') %>
+    <!-- Swiper表示テスト用（後で消す） -->
+    <%- include('./parts/_c-swiper') %>
 
-      <!-- Google Map表示テスト用（後で消す） -->
-      <!-- <%- include('./parts/_c-map') %> -->
+    <!-- Google Map表示テスト用（後で消す） -->
+    <!-- <%- include('./parts/_c-map') %> -->
 
-      <!-- 下層ページのFV表示テスト用（後で消す） -->
-      <!-- <section class="l-news sublayer">
+    <!-- 下層ページのFV表示テスト用（後で消す） -->
+    <!-- <section class="l-news sublayer">
         <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
       </section>
       <section class="l-business sublayer">
@@ -36,6 +36,6 @@
 
     <%- include('./common/_footer') %>
 
-  <!-- <script src="../js/swiper.js"></script> -->
+    <!-- <script src="../js/swiper.js"></script> -->
   </body>
 </html>

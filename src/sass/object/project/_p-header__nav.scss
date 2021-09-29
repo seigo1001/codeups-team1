@@ -1,0 +1,7 @@
+.p-header__nav {
+  height: inherit;
+  display: none;
+  @include mq() {
+    display: block;
+  }
+}
