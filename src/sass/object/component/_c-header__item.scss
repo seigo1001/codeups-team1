@@ -1,0 +1,38 @@
+.c-header__item {
+  display: flex;
+  align-items: center;
+  font-size: rem(15);
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  height: inherit;
+}
+
+.c-header__item:not(:last-of-type) {
+  margin-right: rem(24);
+}
+
+.c-header__item a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  height: inherit;
+}
+
+.c-header__item a::after {
+  content: "";
+  position: absolute;
+  left: rem(-1);
+  bottom: rem(18);
+  width: 100%;
+  height: rem(1);
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.c-header__item a:hover::after {
+  transform: scale(1);
+}

@@ -3,7 +3,7 @@
     letter-spacing: rem(2);
     color: #fff;
     text-align: center;
-    @include mq(tab) {
+    @include mq(lg) {
         font-size: rem(30);
     }
 }
