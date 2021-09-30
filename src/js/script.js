@@ -30,9 +30,9 @@ jQuery(function ($) {
   // ヘッダー
   $(window).on("scroll", function () {
     if ($(".slider1").height() < $(this).scrollTop()) {
-      $(".p-header").css("background", "rgba(17,17,17,1)");
+      $(".header").css("background", "rgba(17,17,17,1)");
     } else {
-      $(".p-header").css("background", "rgba(17,17,17,0.5)");
+      $(".header").css("background", "rgba(17,17,17,0.5)");
     }
   });
 
@@ -40,9 +40,11 @@ jQuery(function ($) {
   $(".js-hamburger").on("click", function () {
     if ($(".js-hamburger").hasClass("open")) {
       $(this).removeClass("open");
+      $(".p-header").removeClass("open");
       $(".js-drawer-menu").fadeOut();
     } else {
       $(this).addClass("open");
+      $(".p-header").addClass("open");
       $(".js-drawer-menu").fadeIn();
     }
   });
