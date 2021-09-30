@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_header') %> <%-
+    include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
+    <!-- ページネーション表示テスト用（後で消す） -->
+    <!-- <%- include('./parts/_c-pagination') %>
+      <%- include('./parts/_c-pagination-simple') %> -->
+
+    <!-- Swiper表示テスト用（後で消す） -->
+    <%- include('./parts/_c-swiper') %>
+
+    <!-- Google Map表示テスト用（後で消す） -->
+    <!-- <%- include('./parts/_c-map') %> -->
+
+    <!-- 下層ページのFV表示テスト用（後で消す） -->
+    <!-- <section class="l-news sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
+      </section>
+      <section class="l-business sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'事業内容'}) %>
+      </section>
+      <section class="l-works sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
+      </section>
+      <section class="l-about sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'企業概要'}) %>
+      </section>
+      <section class="l-blog sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
+      </section>
+      <section class="l-contact sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'お問い合わせ'}) %>
+      </section> -->
+
+    <%- include('./common/_footer') %>
+
+    <!-- <script src="../js/swiper.js"></script> -->
+  </body>
+</html>
