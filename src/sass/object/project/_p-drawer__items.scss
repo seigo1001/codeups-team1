@@ -1,8 +1,9 @@
-.drawer__items {
+.p-drawer__items {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: rem(24);
+  margin-top: rem(-21);
+  margin-right: rem(-2);
 }

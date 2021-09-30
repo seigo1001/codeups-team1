@@ -2,21 +2,19 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_header') %> <%-
-    include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
-    <!-- ページネーション表示テスト用（後で消す） -->
-    <!-- <%- include('./parts/_c-pagination') %>
-      <%- include('./parts/_c-pagination-simple') %> -->
+    <div style="background-color: #333" class="bg">
+      <%- include('./common/_header') %> <%-
+      include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %> <%-
+      include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
+      <%- include('./common/_footer') %>
 
-    <!-- Swiper表示テスト用（後で消す） -->
-    <%- include('./parts/_c-slick-sample') %>
+      <!-- Google Map表示テスト用（後で消す） -->
+      <!-- <%- include('./parts/_c-map') %> -->
 
-    <!-- Google Map表示テスト用（後で消す） -->
-    <!-- <%- include('./parts/_c-map') %> -->
-
-    <%- include('./common/_footer') %>
-
-    <!-- <script src="../js/swiper.js"></script> -->
+      <!-- <% for (var i=0; i < 4; i++) { %>
+      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+      <% } %> -->
+    </div>
     <script>
       $(function() {
         $('.slide').slick({
@@ -70,6 +68,7 @@
         //   }
         // });
 });
+      // <%- include('../js/swiper.js') %>
     </script>
   </body>
 </html>

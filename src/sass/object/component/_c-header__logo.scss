@@ -1,3 +1,10 @@
 .c-header__logo {
   height: rem(30);
+  z-index: 9999;
+}
+
+.c-header__logo img {
+  @include mq() {
+    height: rem(35);
+  }
 }
