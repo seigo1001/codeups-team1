@@ -2,21 +2,21 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <div style="background-color:#333;" class="bg">
-    <%- include('./common/_top-header') %>
-      <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
-      <%- include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
-    <%- include('./common/_footer') %>
+    <div style="background-color: #333" class="bg">
+      <%- include('./common/_header') %> <%-
+      include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %> <%-
+      include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
+      <%- include('./common/_footer') %>
 
-    <!-- Google Map表示テスト用（後で消す） -->
-    <!-- <%- include('./parts/_c-map') %> -->
+      <!-- Google Map表示テスト用（後で消す） -->
+      <!-- <%- include('./parts/_c-map') %> -->
 
-    <!-- <% for (var i=0; i < 4; i++) { %>
+      <!-- <% for (var i=0; i < 4; i++) { %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
       <% } %> -->
     </div>
-  <script>
-    <%- include('../js/swiper.js') %>
-  </script>
+    <script>
+      <%- include('../js/swiper.js') %>
+    </script>
   </body>
 </html>
