@@ -9,7 +9,7 @@
       <%- include('./parts/_c-pagination-simple') %> -->
 
     <!-- Swiper表示テスト用（後で消す） -->
-    <%- include('./parts/_c-swiper') %>
+    <%- include('./parts/_c-slick-sample') %>
 
     <!-- Google Map表示テスト用（後で消す） -->
     <!-- <%- include('./parts/_c-map') %> -->
@@ -17,5 +17,59 @@
     <%- include('./common/_footer') %>
 
     <!-- <script src="../js/swiper.js"></script> -->
+    <script>
+      $(function() {
+        $('.slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slide-navigation'
+      });
+      $('.slide-navigation').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slide',
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [{
+          breakpoint: 780,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+        // var slide_main = $(".slide").slick({
+        //   asNavFor: ".slide-navigation",
+        //   infinite: true,
+        //   slidesToShow: 1,
+        //   slidesToScroll: 1,
+        //   arrows: false,
+        //   fade: true,
+        // });
+        // var slide_sub = $(".slide-navigation").slick({
+        //   asNavFor: ".slide",
+        //   centerMode: true,
+        //   infinite: true,
+        //   slidesToShow: 3,
+        //   slidesToScroll: 1,
+        //   autoplay: true,
+        //   autoplaySpeed: 4000,
+        //   speed: 400,
+        //   focusOnSelect: true,
+        // });
+        // var open_window_Width = $(window).width();
+        // $(window).resize(function() {
+        //   var width = $(window).width();
+        //   if (open_window_Width != width) {
+        //     slide_main.slick("setPosition");
+        //     slide_sub.slick("setPosition");
+        //   }
+        // });
+});
+    </script>
   </body>
 </html>
