@@ -3,43 +3,38 @@
   <%- include('./common/_head') %>
   <body>
     <div style="background-color: #333" class="bg">
-      <%- include('./common/_header') %> <%-
-      include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %> <%-
-      include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
+      <%- include('./common/_header') %> 
+      <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %> 
+      <%- include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
       <%- include('./common/_footer') %>
 
-      <!-- Google Map表示テスト用（後で消す） -->
-      <!-- <%- include('./parts/_c-map') %> -->
-
-      <!-- <% for (var i=0; i < 4; i++) { %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %> -->
     </div>
     <script>
       $(function() {
         $('.slide').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: false,
-        asNavFor: '.slide-navigation'
-      });
-      $('.slide-navigation').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.slide',
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [{
-          breakpoint: 780,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
-      });
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          asNavFor: '.slide-navigation'
+        });
+
+        $('.slide-navigation').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: '.slide',
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          centerMode: true,
+          focusOnSelect: true,
+          responsive: [{
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 1
+            }
+          }]
+        });
         // var slide_main = $(".slide").slick({
         //   asNavFor: ".slide-navigation",
         //   infinite: true,
@@ -67,7 +62,7 @@
         //     slide_sub.slick("setPosition");
         //   }
         // });
-});
+      });
       // <%- include('../js/swiper.js') %>
     </script>
   </body>
