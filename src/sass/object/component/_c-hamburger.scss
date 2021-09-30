@@ -1,5 +1,8 @@
 .c-hamburger {
   z-index: 9999;
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .c-hamburger span {
