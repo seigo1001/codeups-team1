@@ -3,12 +3,13 @@
   <%- include('./common/_head') %>
   <body>
     <div style="background-color: #333" class="bg">
-      <%- include('./common/_header') %> 
-      <%- include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %> 
-      <%- include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %>
-      <%- include('./common/_footer') %>
-
+      <%- include('./common/_header') %> <%-
+      include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
+      <!-- <%-
+      include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %> -->
+      <%- include('./parts/_p-about__table.ejs') %> <%-
+      include('./parts/_c-business__title', {title:'タイトル'}) %> <%-
+      include('./common/_footer') %>
     </div>
-    
   </body>
 </html>
