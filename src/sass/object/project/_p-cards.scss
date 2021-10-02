@@ -6,22 +6,48 @@
 
 .p-cards__img {
   max-width: rem(350);
+  height: rem(233);
+  // ↑画像入ったらheight消す
+  background: #fff;
 }
 
 .p-cards__contents {
   background: #fff;
+  padding: 0 0 rem(16) 0;
+}
+
+.p-cards__body {
+  max-width: rem(302);
+  margin: auto;
+  padding: rem(10) 0;
 }
 
 .p-cards__title {
   max-width: rem(302);
+  font-size: rem(18);
+  line-height: 1.9;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .p-cards__text {
   max-width: rem(302);
+  font-size: rem(14);
+  line-height: 1.8;
+  letter-spacing: 1px;
 }
 
 .p-card__item {
   max-width: rem(302);
+  margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+.p-cards__category {
+  font-size: rem(14);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  background: #EFDB2A;
+  padding: rem(5);
 }
