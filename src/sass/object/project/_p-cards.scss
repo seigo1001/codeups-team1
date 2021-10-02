@@ -1,0 +1,27 @@
+.p-cards {
+  max-width: rem(350);
+  width: 100%;
+  margin: auto;
+}
+
+.p-cards__img {
+  max-width: rem(350);
+}
+
+.p-cards__contents {
+  background: #fff;
+}
+
+.p-cards__title {
+  max-width: rem(302);
+}
+
+.p-cards__text {
+  max-width: rem(302);
+}
+
+.p-card__item {
+  max-width: rem(302);
+  display: flex;
+  justify-content: space-between;
+}
