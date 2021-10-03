@@ -15,8 +15,26 @@ jQuery(function ($) {
     }
   });
 
+  //Topへ戻るボタン
+  function PageTopAnime() {
+    var scroll = $(window).scrollTop();
+    if(scroll >= 200){
+      $('#pageTop').removeClass('DownMove');
+      $('#pageTop').addClass('UpMove');
+    }else{
+      if($('#pageTop').hasClass('UpMove')){
+        $('#pageTop').removeClass('UpMove');
+        $('#pageTop').addClass('DownMove');
+      }
+    }
+  }
+
+  $(window).scroll(function(){
+    PageTopAnime();
+  });
+
   // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
+  $('#pageTop').click(function () {
     $("body,html").animate(
       {
         scrollTop: 0,
