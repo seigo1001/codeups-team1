@@ -1,0 +1,6 @@
+.p-works__items {
+  @include mq() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

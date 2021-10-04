@@ -2,4 +2,10 @@
   color: #fff;
   margin-bottom: rem(14);
   display: block;
+  transition: all 0.3s;
+}
+
+.c-news__text:hover {
+  transition: all 0.3s;
+  color: #f9f871;
 }

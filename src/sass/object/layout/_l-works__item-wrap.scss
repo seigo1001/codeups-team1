@@ -1,0 +1,7 @@
+.l-works__item-wrap:not(:first-of-type) {
+  margin-top: rem(24);
+}
+
+.l-works__item-wrap:nth-of-type(odd) {
+  margin-right: rem(48);
+}

@@ -1,0 +1,6 @@
+.c-works__item {
+  position: relative;
+  @include mq() {
+    width: rem(525);
+  }
+}
