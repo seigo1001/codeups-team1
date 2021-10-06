@@ -1,6 +1,7 @@
 .p-works__items {
   @include mq() {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
