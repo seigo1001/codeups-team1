@@ -1,0 +1,26 @@
+.c-breadcrumb-list {
+  background: #111111;
+  color: #ffffff;
+}
+
+.c-breadcrumb-list__menu {
+  display: flex;
+  padding: rem(16) 0 rem(16) rem(20);
+
+  @include mq(tab) {
+    padding: rem(16) 0 rem(16) rem(90);
+  }
+}
+
+.c-breadcrumb-list__list {
+  font-size: rem(16);
+  line-height: 1;
+}
+
+.c-breadcrumb-list__list::before {
+  content: ">";
+}
+
+.c-breadcrumb-list__list:first-child::before {
+  content: "";
+}

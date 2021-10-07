@@ -1,13 +1,13 @@
-.contact-section {
+.p-contact-section {
   background: #3D3D3D;
 }
 
-.contact-section__wrap {
+.p-contact-section__wrap {
   padding: rem(65) rem(20);
   text-align: center;
 }
 
-.contact-section__contents {
+.p-contact-section__contents {
   position: relative;
 
   @include mq(tab) {
@@ -18,7 +18,7 @@
   }
 }
 
-.contact-section__img {
+.p-contact-section__img {
   display: inline-block;
   max-width: rem(200);
   width: 100%;
@@ -32,7 +32,7 @@
   }
 }
 
-.contact-section__title {
+.p-contact-section__title {
   font-size: rem(20);
   color: #fff;
   line-height: 0.7;
@@ -45,7 +45,7 @@
   }
 }
 
-.contact-section__text {
+.p-contact-section__text {
   font-size: rem(16);
   color: #fff;
   max-width: rem(375);
@@ -59,7 +59,7 @@
   }
 }
 
-.contact-section__btn-link {
+.p-contact-section__btn-link {
   position: relative;
   border: 1px solid #ffffff;
   margin: auto;
@@ -74,7 +74,7 @@
   overflow: hidden;
 }
 
-.contact-section__btn-link:hover .btn-hover {
+.p-contact-section__btn-link:hover .btn-hover {
   left: 0;
   opacity: 1;
 }
