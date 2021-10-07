@@ -5,6 +5,10 @@
 .p-contact-section__wrap {
   padding: rem(65) rem(20);
   text-align: center;
+
+  @include mq(tab) {
+    padding: rem(150) rem(20);
+  }
 }
 
 .p-contact-section__contents {
@@ -26,9 +30,9 @@
   @include mq(tab) {
     position: absolute;
     left: 0;
-    max-width: 32%;
+    max-width: rem(510);
     width: 100%;
-    padding: 0 rem(30);
+    padding: 0 rem(30) 0 rem(60);
   }
 }
 
@@ -63,7 +67,7 @@
   position: relative;
   border: 1px solid #ffffff;
   margin: auto;
-  width: 360px;
+  max-width: 360px;
   height: 60px;
   line-height: 60px;
   display: flex;
