@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
+
+<%- include('./common/_head') %>
+
   <body>
-    <div style="background-color: #333" class="bg">
-      <%- include('./common/_header') %> <%-
-      include('./parts/_c-btn',{text:'ボタンだよ〜', link:'#'}) %>
-      <!-- <%-
-      include('./parts/_c-section-title', {title:'セクションタイトルだよ'}) %> -->
-      <%- include('./parts/_p-news__articles') %>
+    <div style="background-color: #000" class="bg">
+      <%- include('./common/_header') %>
+        <div class="l-test-inner">
+        <%- include('./parts/_p-works__items') %>
+        </div>
 
-      <!-- <%- include('./parts/_c-business__title', {title:'タイトル'}) %> -->
+        <!-- blog-cards yuuki -->
+        <%- include('./parts/_p-cards') %>
+        <!-- contact-section yuuki -->
+        <%- include('./parts/_p-contact-section') %>
+        <!-- パンくずリスト(breadcrumb-list) yuuki -->
+        <%- include('./parts/_c-breadcrumb-list') %>
 
-      <!-- blog-cards yuuki -->
-      <%- include('./parts/_p-cards') %>
-    
+        <!-- c-section-title-gold yuuki -->
+        <%- include('./parts/_c-section-title-logo') %>
 
-      <%- include('./common/_footer') %>
+        <%- include('./common/_footer') %>
     </div>
     
   </body>
+
 </html>

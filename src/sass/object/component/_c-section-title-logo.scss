@@ -1,0 +1,16 @@
+.c-section-title-logo {
+  text-align: center;
+  width: 100%;
+  color: #706F4B;
+  line-height: 1;
+}
+
+.c-section-title-logo__item {
+  font-size: rem(50);
+  font-weight: 400;
+  letter-spacing: rem(2);
+  font-family: 'Noto Serif JP';
+  @include mq(tab) {
+    font-size: rem(110);
+  }
+}

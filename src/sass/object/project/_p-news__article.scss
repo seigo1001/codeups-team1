@@ -1,0 +1,5 @@
+.p-news__article {
+  @include mq() {
+    display: flex;
+  }
+}

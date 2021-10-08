@@ -6,7 +6,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   height: inherit;
-  margin-right: rem(32);
+  margin-right: rem(30);
 }
 
 .c-header__item:not(:last-of-type) {
@@ -14,7 +14,7 @@
 }
 .c-header__item:last-of-type {
   margin-right: 0;
-  padding: 0 rem(32);
+  padding: 0 rem(30) 0 rem(32);
   background: #fff;
   color: #333;
 }
