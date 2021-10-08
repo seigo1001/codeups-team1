@@ -13,7 +13,7 @@
     <%- include('./common/_footer') %>
 
     <script>
-      $(function() {
+      $(function(){
         $('.slide').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -21,7 +21,7 @@
           fade: false,
           asNavFor: '.slide-navigation'
         });
-
+        
         $('.slide-navigation').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
@@ -38,8 +38,8 @@
             }
           }]
         });
+
       });
     </script>
-
   </body>
 </html>
