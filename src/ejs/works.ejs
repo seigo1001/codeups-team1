@@ -10,16 +10,16 @@
     <%- include('./parts/_c-slick-sample') %> <%- include('./common/_footer') %>
 
     <script>
-      $(function () {
-        $(".slide").slick({
+      $(function(){
+        $('.slide').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           fade: false,
           asNavFor: ".slide-navigation",
         });
-
-        $(".slide-navigation").slick({
+        
+        $('.slide-navigation').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
           asNavFor: ".slide",
@@ -37,6 +37,7 @@
             },
           ],
         });
+
       });
     </script>
   </body>
