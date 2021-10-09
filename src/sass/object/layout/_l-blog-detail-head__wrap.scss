@@ -1,0 +1,6 @@
+.l-blog-detail-head__wrap {
+    margin-top: rem(24);
+    @include mq() {
+        margin-top: rem(32);
+    }
+}
