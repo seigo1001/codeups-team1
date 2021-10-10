@@ -1,0 +1,6 @@
+.l-news__article:not(:first-of-type) {
+  margin-top: rem(29);
+  @include mq() {
+    margin-top: rem(22);
+  }
+}

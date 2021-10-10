@@ -1,0 +1,23 @@
+._p-contact-form {
+  max-width: rem(1000);
+  margin: auto;
+  color: #fff;
+  background: pink;
+}
+
+._p-contact-form__content {
+  max-width: rem(700);
+  width: 100%;
+  margin: auto;
+}
+
+label {
+  padding: 0 rem(24) 0 0;
+}
+
+input, textarea {
+  max-width: rem(540);
+  width: 100%;
+  background: #ffffff;
+}
+

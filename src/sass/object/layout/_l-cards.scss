@@ -1,0 +1,11 @@
+.l-cards {
+  max-width: rem(1150);
+}
+
+@media (min-width: rem(768)) {
+  .l-cards {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
