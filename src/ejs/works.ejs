@@ -6,9 +6,10 @@
     <section class="l-works sublayer">
       <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
     </section>
-    <!-- テストコメント -->
 
-    <%- include('./parts/_c-slick-sample') %> <%- include('./common/_footer') %>
+    <%- include('./parts/_c-slick-sample') %> 
+    
+    <%- include('./common/_footer') %>
 
     <script>
       $(function(){
@@ -17,13 +18,12 @@
           slidesToScroll: 1,
           arrows: false,
           fade: false,
-          asNavFor: ".slide-navigation",
+          asNavFor: '.slide-navigation'
         });
-        
         $('.slide-navigation').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
-          asNavFor: ".slide",
+          asNavFor: '.slide',
           dots: false,
           autoplay: true,
           autoplaySpeed: 1000,
@@ -33,12 +33,11 @@
             {
               breakpoint: 780,
               settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
+                slidesToShow: 1
+              }
+            }
+          ]
         });
-
       });
     </script>
   </body>
