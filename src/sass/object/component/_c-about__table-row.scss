@@ -1,0 +1,10 @@
+.c-about__table-row {
+  border-bottom: 1px solid #fff;
+}
+
+.inner {
+  padding: 0 rem(20);
+  @include mq() {
+    padding: 0 rem(88) 0 rem(92);
+  }
+}

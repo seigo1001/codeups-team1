@@ -1,0 +1,8 @@
+.c-business-title {
+  font-size: rem(29);
+  color: #fff;
+  font-weight: normal;
+  @include mq() {
+    font-size: rem(35);
+  }
+}

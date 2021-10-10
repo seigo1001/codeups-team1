@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_header') %>
+    <section class="l-works sublayer">
+      <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
+    </section>
+    <!-- テストコメント -->
+
+    <%- include('./parts/_c-slick-sample') %> <%- include('./common/_footer') %>
+
+    <script>
+      $(function(){
+        $('.slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          asNavFor: ".slide-navigation",
+        });
+        
+        $('.slide-navigation').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: ".slide",
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          centerMode: true,
+          focusOnSelect: true,
+          responsive: [
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+      });
+    </script>
+  </body>
+</html>

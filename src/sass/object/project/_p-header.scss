@@ -1,0 +1,23 @@
+.p-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: rem(50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(8) 0 0 rem(22);
+  z-index: 100;
+  transition: all 0.4s;
+  background: #111;
+  opacity: 0.7;
+  @include mq() {
+    padding: 0 0 0 rem(33);
+    margin-top: rem(-2);
+  }
+}
+
+.p-header.open {
+  opacity: 1;
+}
