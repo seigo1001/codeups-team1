@@ -1,0 +1,7 @@
+.c-blog-detail__text {
+    font-size: rem(16);
+    letter-spacing: .4px;
+    color: #fff;
+    @include mq() {
+    }
+}
