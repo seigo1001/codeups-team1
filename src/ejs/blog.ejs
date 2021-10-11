@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
+<%- include('./common/_head') %>
+
   <body>
     <%- include('./common/_header') %>
 
@@ -8,7 +9,18 @@
         <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
       </section>
 
-    <%- include('./common/_footer') %>
+      <!-- パンくずリスト(breadcrumb-list)  -->
+      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'ブログ'}) %>
+
+
+
+
+
+      <!-- スライド()  -->
+      <!-- <%- include('./parts/_c-slick-sample') %> -->
+
+        <%- include('./common/_footer') %>
 
   </body>
+
 </html>
