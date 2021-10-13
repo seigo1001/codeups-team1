@@ -1,3 +1,9 @@
 <div class="c-news__infomation">
-  <%-include('./_c-news__date') %> <%-include('./_c-news__category') %>
+  <%-include('./_c-news__date', {date: meta.date}) %> 
+  <%-include('./_c-news__category', {category: meta.category}) %>
+  <% if (count == 2) { %>
+    <%-include('./_c-news__text', {link: meta.link, text: meta.textdouble}) %>
+  <% } else { %>
+    <%-include('./_c-news__text', {link: meta.link, text: meta.text}) %>
+  <% } %>
 </div>

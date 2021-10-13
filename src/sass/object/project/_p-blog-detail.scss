@@ -2,8 +2,9 @@
     width: 100vw;
     display: block;
     position: relative;
-    @include mq() {
+    @include mq(tab) {
         width: 100%;
+        max-width: rem(800);
     }
 }
 
@@ -11,6 +12,9 @@
     content: "";
     display: block;
     padding-top: 66.9%;
+    @include mq(tab){
+
+    }
 }
 
 .p-blog-detail__img source {
@@ -38,4 +42,5 @@
     color: #ffffff;
     text-align: left;
     padding-top: rem(160);
+    padding-bottom: rem(120);
 }

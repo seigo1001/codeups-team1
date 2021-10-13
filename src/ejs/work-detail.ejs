@@ -3,8 +3,71 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_header') %>
+    <% 
+      const blogInfo = {
+      date: '2020.07.20',
+      category: 'カテゴリ'
+      }
+    %>
+    <section class="p-work-detail">
+      <%- include('./parts/_c-breadcrumb-list') %>
+
+      <div class="p-work-detail__layer">
+        <div class="c-work-detail__title">〇〇株式会社様 制作実績</div>
+        <%-include('./parts/_c-news__date', {date: blogInfo.date}) %> 
+        <%-include('./parts/_c-news__category', {category: blogInfo.category}) %> 
+
+        <%- include('./parts/_c-slick-sample') %>
+
+        <%- include('./parts/_p-work-detail__point', {title: '制作のポイント'}) %>
+        <%- include('./parts/_p-work-detail__point', {title: 'デザインのポイント'}) %>
+        <%- include('./parts/_p-work-detail__point', {title: 'その他'}) %>
+
+        <%- include('./parts/_c-pagination-simple') %>
+      </div>
+      
+      <%- include('./parts/_c-btn-article') %>
+      <div class="p-work-detail__cards">
+        <% for(var i = 0; i < 4; i++) { %>
+          <%- include('./parts/_p-work-cards') %>
+        <% } %>
+      </div>
+    </section>
+
+    <%- include('./parts/_p-contact-section') %>
 
     <%- include('./common/_footer') %>
+
+    <script>
+      $(function(){
+        $('.slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          asNavFor: 'slide-navigation'
+        });
+        $('.slide-navigation').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: 'slide',
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          centerMode: true,
+          focusOnSelect: true,
+          responsive: [
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+      });
+    </script>
 
   </body>
 </html>
