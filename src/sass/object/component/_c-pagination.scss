@@ -1,5 +1,10 @@
 .c-pagination{
     background: #111111;
+    margin-top: rem(80);
+    margin-bottom: rem(100);
+}
+.c-pagination__wrap{
+    background: #111111;
     display: flex;
     color: #ffffff;
     text-align: center;
