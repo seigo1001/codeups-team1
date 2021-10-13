@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
+<%- include('./common/_head') %>
+
   <body>
     <%- include('./common/_header') %>
-        <section class="l-news sublayer">
-            <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
-        </section>
+      <section class="l-news sublayer">
+        <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
+      </section>
 
-    <%- include('./common/_footer') %>
+      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お知らせ'}) %>
+
+        <%- include('./common/_footer') %>
 
   </body>
+
 </html>
