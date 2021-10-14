@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
+<%- include('./common/_head') %>
+
   <body>
     <%- include('./common/_header') %>
       <section class="l-contact sublayer">
@@ -9,7 +10,11 @@
 
       <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お問い合わせ'}) %>
 
-    <%- include('./common/_footer') %>
+
+        <%- include('./parts/_p-contact-form') %>
+        
+          <%- include('./common/_footer') %>
 
   </body>
+
 </html>
