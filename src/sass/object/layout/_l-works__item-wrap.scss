@@ -1,18 +1,6 @@
-.l-works__item-wrap:not(:first-of-type) {
-  margin-top: rem(24);
+.l-works__item-wrap {
   @include mq() {
-    margin-top: 0;
+   margin: rem(44) rem(24) rem(70);
   }
 }
 
-.l-works__item-wrap:nth-of-type(odd) {
-  @include mq() {
-    margin-right: rem(48);
-  }
-}
-
-.l-works__item-wrap:nth-of-type(n + 3) {
-  @include mq() {
-    margin-top: rem(104);
-  }
-}

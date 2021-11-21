@@ -1,0 +1,20 @@
+.c-blog-detail__subHead {
+  position: relative;
+  display: inline-block;
+  font-size: rem(18);
+  letter-spacing: rem(2);
+  color: #fff;
+  padding: rem(1);
+  border-bottom: 3px solid #fff;
+}
+
+.c-blog-detail__subHead:before {
+  position: absolute;
+  content: "";
+  bottom: rem(-3);
+  left: 0;
+  width: 33.4%;
+  height: rem(3);
+  background: #FFEA2E;
+}
+/*# sourceMappingURL=c-blog-detail__subHead.css.map */
