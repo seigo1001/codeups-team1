@@ -1,19 +1,23 @@
-.c-business__wrap--body{
+.c-company-philosophy-body{
     padding: 0 rem(20);
     color: #ffffff;
     max-width: 100%;
-    @include mq(){
+    @include mq(tab){
         text-align: left;
     }
 }
-.c-business__wrap--title{
+.c-company-philosophy-body__title{
     font-size: rem(25);
     text-align: center;
-    @include mq(){
+    @include mq(tab){
         font-size: rem(20);
         text-align: left;
     }
 }
-.c-business__wrap--text{
+.c-company-philosophy-body__text{
     font-size: rem(16);
+    padding-top: rem(24);
+    @include mq(tab) {
+        padding-top: rem(40);
+    }
 }

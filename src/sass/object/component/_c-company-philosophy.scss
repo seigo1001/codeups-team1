@@ -1,24 +1,24 @@
-.p-business__wrap {
+.c-company-philosophy {
     display: flex;
     flex-direction: column;
     width: 100%;
-    @include mq(){
+    @include mq(tab){
         flex-direction: row;
         justify-content: flex-start;
     }
 }
 
-.p-business__wrap--reverse {
+.c-company-philosophy--reverse {
     display: flex;
     flex-direction: column;
     width: 100%;
-    @include mq(){
+    @include mq(tab){
         flex-direction: row-reverse;
         justify-content: flex-start;
     }
 }
 
-.p-business-wrap__img {
+.c-company-philosophy__img {
     max-width: 100%;
     width: 100%;
     position: relative;
@@ -28,13 +28,13 @@
     }
 }
 
-.p-business-wrap__img:before {
+.c-company-philosophy__img:before {
     content: "";
     display: block;
     padding-top: 66.7%;
 }
 
-.p-business-wrap__img source {
+.c-company-philosophy__img source {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@
     object-position: center;
 }
 
-.p-business-wrap__img img {
+.c-company-philosophy__img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,13 +54,21 @@
     object-position: center;
 }
 
-.p-business__wrap .p-business-wrap__img {
-    @include mq(){
+.c-company-philosophy .c-company-philosophy__img {
+    @include mq(tab){
         margin-right: rem(30);
     }
 }
-.p-business__wrap--reverse .p-business-wrap__img {
-    @include mq(){
+.c-company-philosophy--reverse .c-company-philosophy__img {
+    @include mq(tab){
         margin-left: rem(30);
+    }
+}
+
+.c-company-philosophy__wrap {
+    margin-top: rem(24);
+    @include mq(tab){
+        margin-top: rem(10);
+        max-width: 50%;
     }
 }

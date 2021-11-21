@@ -10,7 +10,7 @@
   letter-spacing: rem(2);
   transition: ease .3s;
   background: #333;
-  @include mq(lg) {
+  @include mq(tab) {
     max-width: rem(360);
     font-size: rem(16);
     font-weight: 500;
