@@ -1,0 +1,121 @@
+.c-blog-detail{
+    background-color: #111111;
+    color: #ffffff;
+    text-align: left;
+    padding-top: rem(160);
+    padding-bottom: rem(120);
+
+    h1 {
+        font-size: rem(20);
+        letter-spacing: .4px;
+        color: #fff;
+        @include mq(tab) {
+            font-size: rem(23);
+        }
+    }
+
+    p {
+        margin-top: rem(24);
+        font-size: rem(16);
+        letter-spacing: .4px;
+        color: #fff;
+        @include mq(tab) {
+            margin-top: rem(32);
+        }
+    }
+
+    h2 {
+        font-size: rem(20);
+        letter-spacing: rem(2);
+        color: #fff;
+        margin-top: rem(24);
+        padding-left: rem(10);
+        border-left: 3px solid #C4C4C4;
+        @include mq(tab) {
+            margin-top: rem(32);
+        }
+    }
+
+    h3 {
+        position: relative;
+        display: inline-block;
+        font-size: rem(18);
+        letter-spacing: rem(2);
+        color: #fff;
+        margin-top: rem(24);
+        padding: rem(1);
+        border-bottom: 3px solid #fff;
+        @include mq(tab) {
+            margin-top: rem(32);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: rem(-3);
+            left: 0;
+            width: 33.4%;
+            height: rem(3);
+            background: #FFEA2E;
+        }
+    }
+
+    picture {
+        width: 100vw;
+        display: block;
+        position: relative;
+        margin: rem(24) calc(50% - 50vw);
+        margin-top: rem(24);
+        @include mq(tab) {
+            width: 100%;
+            max-width: rem(800);
+            margin: rem(32) 0 0 0;
+        }
+        &::before{
+            content: "";
+            display: block;
+            padding-top: 66.9%;
+        }
+    }
+
+    picture source {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    picture img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    ul {
+        list-style: disc;
+        color: #fff;
+        font-size: rem(16);
+        letter-spacing: .4px;
+        padding-left: rem(18);
+    }
+
+    ul:nth-of-type(2n) {
+        list-style-type: decimal;
+        color: #fff;
+        font-size: rem(16);
+        letter-spacing: .4px;
+        padding-left: rem(18);
+        margin-top: rem(24);
+        @include mq(tab) {
+            margin-top: rem(32);
+        }
+    }
+
+}
+
