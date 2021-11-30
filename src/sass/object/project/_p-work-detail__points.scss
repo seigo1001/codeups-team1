@@ -1,6 +1,26 @@
-.p-work-detail__points{
+.c-works-detail-point {
     padding: rem(44) rem(22) rem(32) rem(22);
     border: 1px solid #fff;
     position: relative;
     margin-top: rem(100);
+}
+
+.c-works-detail-point__title {
+    color: #fff;
+    background-color: #111;
+    font-size: rem(20);
+    border: rem(1) solid #fff;
+    border-radius: rem(30);
+    padding: rem(8) rem(20);
+    display: inline-block;
+    position: absolute;
+    top: rem(-25);
+    left: rem(40);
+}
+
+.c-works-detail-point__text {
+    color: #fff;
+    font-size: rem(16);
+    line-height: rem(35);
+    letter-spacing: 0.4;
 }
