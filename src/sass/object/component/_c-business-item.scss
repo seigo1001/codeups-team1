@@ -1,4 +1,4 @@
-.c-company-philosophy {
+.c-business-item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,7 +8,7 @@
     }
 }
 
-.c-company-philosophy--reverse {
+.c-business-item--reverse {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,7 +18,7 @@
     }
 }
 
-.c-company-philosophy__img {
+.c-business-item__img {
     max-width: 100%;
     width: 100%;
     position: relative;
@@ -28,13 +28,13 @@
     }
 }
 
-.c-company-philosophy__img:before {
+.c-business-item__img:before {
     content: "";
     display: block;
     padding-top: 66.7%;
 }
 
-.c-company-philosophy__img source {
+.c-business-item__img source {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@
     object-position: center;
 }
 
-.c-company-philosophy__img img {
+.c-business-item__img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,21 +54,51 @@
     object-position: center;
 }
 
-.c-company-philosophy .c-company-philosophy__img {
+.c-business-item .c-business-item__img {
     @include mq(tab){
         margin-right: rem(30);
     }
 }
-.c-company-philosophy--reverse .c-company-philosophy__img {
+.c-business-item--reverse .c-business-item__img {
     @include mq(tab){
         margin-left: rem(30);
     }
 }
 
-.c-company-philosophy__wrap {
+.c-business-item__wrap {
     margin-top: rem(24);
     @include mq(tab){
         margin-top: rem(10);
         max-width: 50%;
+    }
+}
+
+.c-business-item__body{
+    margin-top: rem(24);
+    padding: 0 rem(20);
+    color: #ffffff;
+    max-width: 100%;
+    @include mq(tab){
+        text-align: left;
+    }
+}
+.c-business-item-body__title{
+    font-size: rem(25);
+    text-align: center;
+    @include mq(tab){
+        font-size: rem(20);
+        text-align: left;
+    }
+}
+.c-business-item-body__text{
+    font-size: rem(16);
+    padding-top: rem(24);
+    line-height: rem(23.17);
+    letter-spacing: rem(2);
+    text-align: left;
+    @include mq(tab) {
+        padding-top: rem(40);
+        line-height: rem(35);
+        letter-spacing: rem(.5);
     }
 }
