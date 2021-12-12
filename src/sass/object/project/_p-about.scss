@@ -1,0 +1,30 @@
+.p-about {
+    background-color: #000;
+}
+
+.p-about__wrap {
+    margin-top: rem(103);
+    @include mq(tab) {
+        margin-top: rem(147);
+    }
+}
+
+.p-about-wrap__table {
+    max-width: rem(375);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    @include  mq(tab) {
+        max-width: rem(1140);
+    }
+}
+
+.p-about-wrap__map {
+    margin-top: rem(120);
+    padding-bottom: rem(120);
+    @include mq(tab) {
+        margin-top: rem(40);
+        padding-bottom: rem(60);
+    }
+}
+

@@ -1,4 +1,4 @@
-.c-about__table-data {
+.c-about-table-data {
   font-size: rem(13);
   border: none;
   color: #fff;
@@ -7,7 +7,7 @@
   padding-left: rem(4);
   padding-right: 0;
   line-height: rem(23);
-  @include mq() {
+  @include mq(tab) {
     font-size: rem(16);
     letter-spacing: rem(1);
     padding-top: rem(24);
