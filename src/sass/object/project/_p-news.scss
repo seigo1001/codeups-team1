@@ -1,16 +1,19 @@
-.p-news{
-    background-color: #111111;
+.p-news {
+  background-color: #111111;
 }
 
-.p-news__wrap{
-    padding: rem(70) 0 rem(150) 0;
+.p-news__wrap {
+  padding: rem(70) 0 rem(150) 0;
 }
 .p-news__item {
   margin-bottom: rem(16);
-  @include mq(tab){
+  @include mq(tab) {
     margin-bottom: rem(30);
   }
 }
 
-
-
+.p-news__article {
+  @include mq() {
+    display: flex;
+  }
+}

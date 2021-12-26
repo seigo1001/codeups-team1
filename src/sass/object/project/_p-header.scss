@@ -18,6 +18,32 @@
   }
 }
 
-.p-header.open {
+.p-header.is-open {
   opacity: 1;
+}
+
+.p-header__nav {
+  height: inherit;
+  display: none;
+  @include mq() {
+    display: block;
+  }
+}
+
+.p-header__items {
+  display: flex;
+  height: inherit;
+  @include mq() {
+    margin-top: rem(-1);
+  }
+}
+
+.p-header__inner {
+  opacity: 0.7;
+}
+
+.p-header__drawer {
+  position: absolute;
+  top: rem(13);
+  right: rem(21);
 }
