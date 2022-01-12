@@ -9,19 +9,19 @@
         <section class="l-news sublayer p-news">
           <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
 
-            <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お知らせ'}) %>
+          <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お知らせ'}) %>
 
-              <div class="p-news__wrap">
-                <% for (var i=0; i < 10; i++) { %>
-                  <div class="p-news__item">
-                  <%- include('./parts/_c-news-infomation', {meta: blogInfo, count: i}) %>
-                  </div>
-                    <% } %>
-                      <%- include('./parts/_c-pagination') %>
-              </div>
+            <div class="p-news__wrap">
+              <% for (var i=0; i < 10; i++) { %>
+                <div class="p-news__item">
+                <%- include('./parts/_p-news-infomation') %>
+                </div>
+              <% } %>
+              <%- include('./parts/_c-pagination') %>
+            </div>
         </section>
 
         <%- include('./parts/_p-contact-section') %>
-          <%- include('./common/_footer') %>
+        <%- include('./common/_footer') %>
   </body>
 </html>

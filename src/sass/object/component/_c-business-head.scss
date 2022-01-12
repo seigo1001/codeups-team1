@@ -1,0 +1,33 @@
+.c-business-head {
+    margin: 0  auto;
+    padding: 0 rem(20);
+    @include mq(tab) {
+        max-width: rem(580);
+        width: 100%;
+    }
+}
+
+.c-business-head__title {
+    color: #fff;
+    font-size: rem(20);
+    font-weight: 400;
+    letter-spacing: rem(2);
+    line-height: rem(23);
+    @include mq(tab) {
+        font-size: rem(25);
+        line-height: rem(35);
+    }
+}
+
+.c-business-head__text {
+    margin-top: rem(24);
+    color: #fff;
+    font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: rem(1);
+    line-height: rem(23);
+    text-align: left;
+    @include mq(tab) {
+        line-height: rem(35);
+    }
+}

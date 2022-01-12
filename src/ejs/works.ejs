@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
+<%- include('./common/_head') %>
+
   <body>
     <%- include('./common/_header') %>
-    <section class="l-works sublayer">
+    
+    <section class="l-works sublayer p-works">
       <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
+      
+      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'制作実績'}) %>
+      
+      <%- include('./parts/_p-works-items') %>
     </section>
 
-    <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'制作実績'}) %>
 
-
-    <%- include('./parts/_p-works__items') %>
-
-    
+    <%- include('./parts/_p-contact-section') %>
     <%- include('./common/_footer') %>
 
   </body>
