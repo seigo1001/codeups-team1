@@ -30,15 +30,3 @@
         margin-bottom: rem(0);
     }
 }
-
-.c-footer__item{
-    color: #ffffff;
-    font-size: 16px;
-    list-style-type: none;
-    margin-bottom: rem(8);
-    font-family: $font-family-base;
-    @include mq(){
-        margin-bottom: rem(0);
-        margin-right: rem(32);
-    }
-}
