@@ -1,4 +1,4 @@
-.c-about__table-head {
+.c-about-table-head {
   width: 32.7%;
   color: #fff;
   font-size: rem(13);
@@ -7,7 +7,7 @@
   padding-top: rem(14);
   padding-bottom: rem(11);
   padding-left: rem(4);
-  @include mq() {
+  @include mq(tab) {
     font-size: rem(16);
     width: 13.4%;
     padding-left: 0;

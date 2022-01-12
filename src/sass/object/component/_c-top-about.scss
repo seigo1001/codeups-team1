@@ -1,18 +1,18 @@
-.p-top-about {
-    @include mq() {
+.c-top-about {
+    @include mq(tab) {
         max-width: rem(1280);
         margin-right: auto;
         margin-left: auto;
     }
 }
 
-.p-top-about__wrap {
+.c-top-about__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:#333;
     width: 100%;
-    @include mq(){
+    @include mq(tab){
         flex-direction: row-reverse;
         justify-content: flex-start;
         padding: rem(80) rem(90);
@@ -20,22 +20,22 @@
     }
 }
 
-.p-top-about__img {
+.c-top-about__img {
     max-width: 100%;
     width: 100%;
     position: relative;
-    @include mq(){
+    @include mq(tab){
         max-width: 50%;
     }
 }
 
-.p-top-about__img:before {
+.c-top-about__img:before {
     content: "";
     display: block;
     padding-top: 69.6%;
 }
 
-.p-top-about__img source {
+.c-top-about__img source {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,7 @@
     object-position: center;
 }
 
-.p-top-about__img img {
+.c-top-about__img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,29 +55,38 @@
     object-position: center;
 }
 
-.p-top-about__body {
+.c-top-about__body {
     padding: rem(20);
-    @include mq() {
+    @include mq(tab) {
         max-width: 50%;
     }
 }
 
-.p-top-about__body-title {
+.c-top-about-body__title {
     color: #fff;
     font-size: rem(20);
     letter-spacing: rem(2);
     text-align: center;
-    @include mq() {
+    @include mq(tab) {
         text-align: left;
     }
 }
 
-.p-top-about__body-text {
+.c-top-about-body__text {
     margin-top: rem(24);
     color: #fff;
     font-size: rem(16);
     letter-spacing: rem(2);
-    @include mq() {
+    @include mq(tab) {
+        margin-top: rem(48);
+    }
+}
+
+.c-top-about-body__btn {
+    margin-top: rem(16);
+    text-align: center;
+    @include mq(tab) {
+        text-align: left;
         margin-top: rem(48);
     }
 }

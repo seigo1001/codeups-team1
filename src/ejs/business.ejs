@@ -3,13 +3,29 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_header') %>
-      <section class="l-business sublayer">
+      <section class="l-business sublayer p-business">
         <%- include('./parts/_c-subFV', {pageTitle:'事業内容'}) %>
+        <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'事業内容'}) %>
+        <div class="p-business__wrap">
+          <div class="p-business-wrap__head">
+            <h2 class="p-business-wrap-head__title">企業理念</h2>
+            <p class="p-business-wrap-head__text">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
+          </div>
+          <div class="p-business-wrap__items">
+            <div class="p-business-wrap__item">
+              <%- include('./parts/_c-business-item.ejs',{imgPc:'business_container_pc.jpg',imgSp:'business_container_sp.jpg',title:'企業理念１',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+            </div>
+            <div class="p-business-wrap__item">
+              <%- include('./parts/_c-business-item--reverse.ejs',{imgPc:'business_container_pc2.jpg',imgSp:'business_container_sp2.jpg',title:'企業理念２',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+            </div>
+            <div class="p-business-wrap__item">
+              <%- include('./parts/_c-business-item.ejs',{imgPc:'business_container_pc3.jpg',imgSp:'business_container_sp3.jpg',title:'企業理念３',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'事業内容'}) %>
-
-    <%- include('./common/_footer') %>
+      <%- include('./parts/_p-contact-section') %>
+      <%- include('./common/_footer') %>
 
   </body>
 </html>
