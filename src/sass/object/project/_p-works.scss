@@ -1,0 +1,17 @@
+.p-works{
+    background-color: #111111;
+}
+
+.p-works__items {
+    @include mq() {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+}
+
+.p-works__item {
+    @include mq() {
+     margin: rem(44) rem(24) rem(70);
+    }
+  }
