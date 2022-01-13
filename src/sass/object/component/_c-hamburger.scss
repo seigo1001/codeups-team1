@@ -1,5 +1,6 @@
 .c-hamburger {
   z-index: 9999;
+
   @include mq(tab) {
     display: none;
   }
@@ -8,12 +9,13 @@
 .c-hamburger span {
   position: relative;
   display: block;
-  height: rem(2);
   width: rem(26);
+  height: rem(2);
   border-radius: rem(1);
-  background: #fff;
+          transition: ease 0.3s;
+
+  background: $background;
   -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
 
 .c-hamburger span:nth-child(1) {
@@ -28,25 +30,28 @@
   top: 0;
 }
 /*OPEN時の動き*/
-.c-hamburger.open span {
+.c-hamburger.is-open span {
   width: rem(22);
 }
-.c-hamburger.open span:nth-child(1) {
+.c-hamburger.is-open span:nth-child(1) {
   top: rem(11);
   right: rem(-7);
+          transform: rotate(45deg);
+
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
-.c-hamburger.open span:nth-child(2) {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c-hamburger.is-open span:nth-child(2) {
+          transform: translateY(-50%);
   opacity: 0;
+
+  -webkit-transform: translateY(-50%);
 }
 
-.c-hamburger.open span:nth-child(3) {
+.c-hamburger.is-open span:nth-child(3) {
   top: rem(-2);
   right: rem(-7);
+          transform: rotate(-45deg);
+
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
