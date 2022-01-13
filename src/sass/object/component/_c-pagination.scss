@@ -1,11 +1,12 @@
 .c-pagination{
     background: #111111;
-    margin-top: rem(80);
-    margin-bottom: rem(100);
+    padding-top: rem(80);
+    padding-bottom: rem(100);
 }
 .c-pagination__wrap{
     background: #111111;
     display: flex;
+    justify-content: center;
     color: #ffffff;
     text-align: center;
     max-width: rem(340);
