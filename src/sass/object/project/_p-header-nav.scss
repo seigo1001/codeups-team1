@@ -1,0 +1,17 @@
+.p-header-nav {
+  display: none;
+  height: inherit;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+.p-header-nav__items {
+  display: flex;
+  height: inherit;
+
+  @include mq() {
+    margin-top: rem(-1);
+  }
+}

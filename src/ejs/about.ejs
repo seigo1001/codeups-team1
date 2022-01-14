@@ -4,19 +4,19 @@
   <body>
     <%- include('./common/_header') %>
 
-      <section class="l-about sublayer p-about">
-        <%- include('./parts/_c-subFV', {pageTitle:'企業概要'}) %>
-        <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'企業概要'}) %>
-        <div class="p-about__wrap">
-          <div class="p-about-wrap__table">
-            <%- include('./parts/_c-about-table.ejs') %>
-          </div>
-          <div class="p-about-wrap__map">
-            <%- include('./parts/_c-map.ejs') %>
-          </div>
+    <section class="l-about sublayer p-about">
+      <%- include('./parts/_c-subFV', {pageTitle:'企業概要'}) %> <%-
+      include('./parts/_c-breadcrumb-list' ,{breadcrumb:'企業概要'}) %>
+      <div class="p-about__wrap">
+        <div class="p-about-wrap__table">
+          <%- include('./parts/_c-about-table.ejs') %>
         </div>
-      </section>
-      <%- include('./parts/_p-contact-section') %>
-      <%- include('./common/_footer') %>
+        <div class="p-about-wrap__map">
+          <%- include('./parts/_c-map.ejs') %>
+        </div>
+      </div>
+    </section>
+    <%- include('./parts/_p-contact-section') %> <%- include('./common/_footer')
+    %>
   </body>
 </html>

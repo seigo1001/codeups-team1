@@ -1,28 +1,86 @@
-.p-business{
-    background-color: #111111;
-    padding-bottom: rem(120);
+.p-business {
+  padding-bottom: rem(120);
+  background-color: #111111;
 }
 
 .p-business__wrap {
-    margin-top: rem(85);
-    @include mq(tab) {
-        margin-top: rem(69);
-    }
+  margin-top: rem(85);
+
+  @include mq(tab) {
+    margin-top: rem(69);
+  }
 }
 
 .p-business__items {
-    margin: rem(80) 0 0 0;
-    @include mq(tab) {
-        max-width: rem(1080);
-        width: 100%;
-        padding: 0  rem(20);
-        margin: rem(150) auto 0;
-    }
+  margin: rem(80) 0 0 0;
+
+  @include mq(tab) {
+    width: 100%;
+    max-width: rem(1080);
+    padding: 0 rem(20);
+    margin: rem(150) auto 0;
+  }
 }
 
 .p-business-wrap__item {
-    margin-top: rem(48);
-    @include mq(tab) {
-        margin-top: rem(104);
-    }
+  margin-top: rem(48);
+
+  @include mq(tab) {
+    margin-top: rem(104);
+  }
+}
+.p-business-wrap__head {
+  padding: 0 rem(20);
+  margin: 0 auto;
+
+  @include mq(tab) {
+    width: 100%;
+    max-width: rem(580);
+  }
+}
+
+.p-business-wrap-head__title {
+  line-height: rem(23);
+  letter-spacing: rem(2);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: rem(20);
+
+  @include mq(tab) {
+    line-height: rem(35);
+    font-size: rem(25);
+  }
+}
+
+.p-business-wrap-head__text {
+  line-height: rem(23);
+  letter-spacing: rem(1);
+  margin-top: rem(24);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: rem(16);
+  text-align: left;
+
+  @include mq(tab) {
+    line-height: rem(35);
+  }
+}
+
+.p-business-wrap__items {
+  margin: rem(80) 0 0 0;
+
+  @include mq(tab) {
+    width: 100%;
+    max-width: rem(1080);
+    padding: 0 rem(20);
+    margin: rem(150) auto 0;
+  }
+}
+
+.p-business-wrap__item + .p-business-wrap__item {
+  margin-top: rem(48);
+
+  @include mq(tab) {
+    margin-top: rem(104);
+  }
 }

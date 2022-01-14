@@ -1,7 +1,0 @@
-.p-header__items {
-  display: flex;
-  height: inherit;
-  @include mq() {
-    margin-top: rem(-1);
-  }
-}
