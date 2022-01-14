@@ -18,23 +18,23 @@ jQuery(function ($) {
   //Topへ戻るボタン
   function PageTopAnime() {
     var scroll = $(window).scrollTop();
-    if(scroll >= 200){
-      $('#pageTop').removeClass('DownMove');
-      $('#pageTop').addClass('UpMove');
-    }else{
-      if($('#pageTop').hasClass('UpMove')){
-        $('#pageTop').removeClass('UpMove');
-        $('#pageTop').addClass('DownMove');
+    if (scroll >= 200) {
+      $("#pageTop").removeClass("DownMove");
+      $("#pageTop").addClass("UpMove");
+    } else {
+      if ($("#pageTop").hasClass("UpMove")) {
+        $("#pageTop").removeClass("UpMove");
+        $("#pageTop").addClass("DownMove");
       }
     }
   }
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     PageTopAnime();
   });
 
   // ボタンをクリックしたらスクロールして上に戻る
-  $('#pageTop').click(function () {
+  $("#pageTop").click(function () {
     $("body,html").animate(
       {
         scrollTop: 0,
@@ -56,13 +56,13 @@ jQuery(function ($) {
 
   //ドロワーメニュー
   $(".js-hamburger").on("click", function () {
-    if ($(".js-hamburger").hasClass("open")) {
-      $(this).removeClass("open");
-      $(".p-header").removeClass("open");
+    if ($(".js-hamburger").hasClass("is-open")) {
+      $(this).removeClass("is-open");
+      $(".p-header").removeClass("is-open");
       $(".js-drawer-menu").fadeOut();
     } else {
-      $(this).addClass("open");
-      $(".p-header").addClass("open");
+      $(this).addClass("is-open");
+      $(".p-header").addClass("is-open");
       $(".js-drawer-menu").fadeIn();
     }
   });
@@ -78,3 +78,19 @@ jQuery(function ($) {
     return false;
   });
 });
+
+// 　トップページスライダー
+let swipeOption = {
+  loop: true,
+  effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+};
+new Swiper(".swiper-container", swipeOption);

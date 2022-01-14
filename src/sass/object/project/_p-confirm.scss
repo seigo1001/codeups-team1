@@ -1,0 +1,58 @@
+.p-confirm {
+    background-color: #000;
+    padding-top: rem(130);
+    @include  mq(tab) {
+        padding-top: rem(200);
+    }
+}
+
+.p-confirm__wrap {
+    max-width: rem(375);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    @include mq(tab) {
+        max-width: rem(550);
+    }
+}
+
+.p-confirm-wrap__title {
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(20);
+    line-height: rem(28.96);
+    letter-spacing: 2;
+    text-align: center;
+    @include mq(tab) {
+        font-size: rem(30);
+        line-height: rem(35);
+    }
+}
+
+.p-confirm-wrap__text {
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(20);
+    line-height: rem(28.96);
+    letter-spacing: 2;
+    text-align: center;
+    margin-top: rem(80);
+    @include mq(tab) {
+        font-size: rem(30);
+        line-height: rem(35);
+    }
+}
+
+.p-confirm-wrap__text br {
+    @include mq(tab) {
+        display: none;
+    }
+}
+
+.p-confirm-wrap__btn {
+    margin-top: rem(80);
+    padding-bottom: rem(160);
+    @include mq(tab) {
+        padding-bottom: rem(180);
+    }
+}

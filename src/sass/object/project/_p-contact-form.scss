@@ -1,23 +1,91 @@
-._p-contact-form {
-  max-width: rem(1000);
-  margin: auto;
-  color: #fff;
-  background: pink;
+.p-contact-form {
+  color: #ffffff;
+  background: #111111;
 }
 
-._p-contact-form__content {
-  max-width: rem(700);
+.l-contact-form {
   width: 100%;
   margin: auto;
+}
+.p-contact-form__wrap {
+  @include mq(pc) {
+    max-width: rem(690);
+    width: 100%;
+    margin: auto;
+    padding: rem(80) 0 0 0;
+  }
+}
+
+.p-contact-form__content {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  padding: 0 rem(20);
+
+  @include mq(pc) {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: rem(730);
+    width: 100%;
+    padding: rem(22) 0;
+  }
+}
+
+@include mq(pc) {
+  .contact-box {
+    align-items: flex-start;
+  }
 }
 
 label {
-  padding: 0 rem(24) 0 0;
+  display: block;
+  font-size: rem(14);
+  line-height: 1.7;
+  padding: rem(32) rem(24) rem(16) 0;
+
+  @include mq(pc) {
+    padding: 0 rem(24) 0 0;
+    white-space: nowrap;
+  }
 }
 
-input, textarea {
-  max-width: rem(540);
+input {
+  max-width: rem(600);
   width: 100%;
-  background: #ffffff;
+  font-size: rem(14);
+  line-height: 1.9;
+
+  @include mq(pc) {
+    max-width: rem(540);
+    width: 100%;
+  }
 }
 
+textarea {
+  max-width: rem(600);
+  width: 100%;
+  font-size: rem(14);
+  line-height: 1.9;
+  padding: rem(16) 0 rem(208) rem(4);
+
+  @include mq(pc) {
+    max-width: rem(540);
+    width: 100%;
+  }
+}
+
+.l-content-form-btn {
+  text-align: center;
+  padding: rem(36)  rem(20) rem(48);
+  @include mq(pc) {
+    padding: rem(36)  rem(20) rem(48) rem(160);
+}
+}
+
+.content-form-btn {
+  white-space: nowrap;
+  padding: rem(17) rem(150);
+  font-size: rem(16);
+
+}
