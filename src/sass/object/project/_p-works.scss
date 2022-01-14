@@ -1,17 +1,32 @@
 .p-works{
     background-color: #111111;
 }
+.p-works__wrap{
+  max-width: rem(1100);
+  width: 100%;
+  margin: 0 auto;
+}
+.p-works__wrap .c-breadcrumb-list{
+  margin-bottom: rem(85);
+  @include mq(tab){
+    margin-bottom: rem(115);
+  }
+}
+.p-works__wrap .c-breadcrumb-list__menu{
+  padding-left: 0;
+}
 
 .p-works__items {
     @include mq() {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 }
 
 .p-works__item {
     @include mq() {
-     margin: rem(44) rem(24) rem(70);
+     margin-top: rem(44);
+     margin-bottom: rem(70);
     }
-  }
+}
