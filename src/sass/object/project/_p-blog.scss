@@ -1,0 +1,11 @@
+.p-blog__wrap {
+    display: block;
+    max-width: rem(335);
+    width: 100%;
+    margin: 0 auto;
+    @include mq(tab){
+        max-width: rem(1100);
+        width: 100%;
+        margin: 0 auto;
+    }
+}
