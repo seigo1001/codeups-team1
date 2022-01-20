@@ -1,7 +1,6 @@
-<div class="p-news__articles">
+<div class="p-news__articles p-articles">
   <% for (var i = 0; i < 10; i++) { %> <% if(i == 1) { %>
-  <%-include('./_p-news__article',
-  {date:'2020.07.20',category:'カテゴリ',link:'#'
+  <%-include('./_c-article', {date:'2020.07.20',category:'カテゴリ',link:'#'
   ,text:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'})
   %> <% } else { %> <%-include('./_p-news__article',
   {date:'2020.07.20',category:'カテゴリ',link:'#'

@@ -9,9 +9,8 @@
 
       <div class="p-work-detail__layer">
         <div class="c-work-detail__title">〇〇株式会社様 制作実績</div>
-        <%-include('./parts/_c-news__date', {date: blogInfo.date}) %>
-        <%-include('./parts/_c-news__category', {category: blogInfo.category})
-        %>
+        <%-include('./parts/_c-date', {date: blogInfo.date}) %>
+        <%-include('./parts/_c-category', {category: blogInfo.category}) %>
 
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
