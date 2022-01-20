@@ -11,6 +11,24 @@
   }
 }
 
+.p-business__items {
+  margin: rem(80) 0 0 0;
+
+  @include mq(tab) {
+    width: 100%;
+    max-width: rem(1080);
+    padding: 0 rem(20);
+    margin: rem(150) auto 0;
+  }
+}
+
+.p-business-wrap__item {
+  margin-top: rem(48);
+
+  @include mq(tab) {
+    margin-top: rem(104);
+  }
+}
 .p-business-wrap__head {
   padding: 0 rem(20);
   margin: 0 auto;

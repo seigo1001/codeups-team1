@@ -8,9 +8,8 @@
       <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'制作実績'}) %>
 
       <div class="p-work-detail__layer">
-        <div class="c-work-detail__title">〇〇株式会社様 制作実績</div>
-        <%-include('./parts/_c-date', {date: blogInfo.date}) %>
-        <%-include('./parts/_c-category', {category: blogInfo.category}) %>
+        <div class="c-work-detail-title">〇〇株式会社様 制作実績</div>
+        <%- include('./parts/_c-news-DateCat') %>
 
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
