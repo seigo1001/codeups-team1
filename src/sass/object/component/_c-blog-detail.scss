@@ -1,12 +1,12 @@
 .c-blog-head{
-    margin-bottom: rem(24);
+    margin-bottom: rem(30);
     text-align: left;
 }
 .c-blog-head__title{
-    font-size: rem(20);
+    font-size: rem(23);
     font-weight: 400;
     line-height: rem(35);
-    letter-spacing: 0.4;
+    letter-spacing: 0.02em;
     margin-top: rem(78);
     margin-bottom: rem(16);
 }
@@ -14,7 +14,7 @@
     margin: 0 calc(50% - 50vw);
     width: 100vw;   
     margin-top: rem(16);
-    margin-bottom: rem(24);
+    margin-bottom: rem(32);
 }
 .c-blog-eyeCatch img{
     @include mq(tab){
@@ -29,6 +29,11 @@
     letter-spacing: 0.4px;
 }
 
+.c-blog-head .c-news-DateCat{
+    margin-top: rem(38);
+    margin-bottom: rem(32);
+}
+
 .c-blog-body{
     text-align: left;
 }
@@ -37,18 +42,21 @@
     font-weight: 400;
     border-left: 3px solid #C4C4C4;
     padding-left: rem(9);
-    margin-bottom: rem(24);
+    margin-bottom: rem(35);
+    letter-spacing: 0.07em;
 }
 .c-blog-body__title p{
     font-size: rem(16);
     font-weight: 400;
     letter-spacing: 0.4px;
-    margin-bottom: rem(24);
+    margin-bottom: rem(36);
+    line-height: 2.0;
 }
 .c-blog-body__subtitle h3{
-    font-size: rem(18);
+    font-size: rem(19);
     font-weight: 400;
-    margin-bottom: rem(24);
+    margin-bottom: rem(33);
+    padding-left: rem(8);
 }
 .c-blog-body__subtitle span{
     border-bottom: 3px solid #C4C4C4;
@@ -67,20 +75,24 @@
     font-size: rem(16);
     font-weight: 400;
     letter-spacing: 0.4px;
-    margin-bottom: rem(24);
+    margin-bottom: rem(36);
+    line-height: 2.0;
 }
 .bullet-list{
-    margin-bottom: rem(24);
+    margin-bottom: rem(32);
 }
 .bullet-list li{
     list-style: initial;
     list-style-position: inside;
     line-height: rem(35);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
 }
 .number-list li{
     list-style-type: decimal;
     list-style-position: inside;
     line-height: rem(35);
     letter-spacing: 0.4px;
+}
+.blog-body__body{
+    margin-bottom: rem(22);
 }

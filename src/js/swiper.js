@@ -1,8 +1,8 @@
-var slider = new Swiper ('.swiper-container', {
+var slider = new Swiper ('.c-gallery-slider', {
       slidesPerView: 1,
       centeredSlides: true,
       loop: true,
-      loopedSlides: 9, //スライドの枚数と同じ値を指定
+      loopedSlides: 8, //スライドの枚数と同じ値を指定
       autoplay: {
         delay: 2000,
       },
@@ -13,7 +13,7 @@ var slider = new Swiper ('.swiper-container', {
     });
 
     //サムネイル
-    var thumbs = new Swiper ('.gallery-thumbs', {
+    var thumbs = new Swiper ('.c-gallery-thumbs', {
         slidesPerView: 'auto',
         spaceBetween: 10,
         centeredSlides: true,
