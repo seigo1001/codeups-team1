@@ -5,8 +5,17 @@
 }
 
 .p-work-detail__cards {
-  display: flex;
-  justify-content: center;
+  display: block;
+  max-width: rem(335);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(tab){
+    display: flex;
+    justify-content: center;
+    max-width: rem(1100);
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 .p-work-detail__wrap {
@@ -23,6 +32,9 @@
 }
 
 .p-work-detail__layer {
+  max-width: rem(335);
+  width: 100%;
+  margin: 0 auto;
   @include mq(tab) {
     width: 100%;
     max-width: rem(800);

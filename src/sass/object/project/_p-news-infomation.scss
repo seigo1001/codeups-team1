@@ -1,5 +1,12 @@
 .p-news-infomation {
-  display: flex;
-  align-items: center;
+  display: block;
   text-align: left;
+  @include mq(tab){
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+.p-news-information__date{
+  margin-bottom: rem(16);
 }

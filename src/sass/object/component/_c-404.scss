@@ -1,8 +1,18 @@
+.c-404{
+    background-color: #111111;
+    padding: rem(200) 0 rem(150) 0;
+}
 .c-404__title{
-    font-size: rem(60);
+    font-size: rem(40);
     color: #FFEA2E;
     margin-bottom: rem(80);
     font-weight: 400;
+    @include mq(tab){
+        font-size: rem(60);
+        color: #FFEA2E;
+        margin-bottom: rem(80);
+        font-weight: 400;
+    }
 }
 
 .c-404__text{

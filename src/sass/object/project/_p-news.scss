@@ -3,10 +3,19 @@
 }
 
 .p-news__wrap {
-  padding: rem(70) 0 rem(150) 0;
+  padding: rem(70) 0 rem(0) 0;
+  max-width: rem(335);
+  width: 95%;
+  margin: 0 auto;
+  @include mq(tab){
+    padding: rem(70) 0 rem(150) 0;
+    max-width: rem(860);
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .p-news__item {
-  margin-bottom: rem(16);
+  margin-bottom: rem(32);
 
   @include mq(tab) {
     margin-bottom: rem(30);

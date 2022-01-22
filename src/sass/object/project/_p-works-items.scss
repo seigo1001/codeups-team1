@@ -1,7 +1,10 @@
 .p-works-items {
   @include mq() {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
+}
+.p-works__item{
+  margin-bottom: rem(50);
 }
