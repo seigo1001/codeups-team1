@@ -88,11 +88,20 @@
 
 //ギャラリー
 .c-gallery {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    // width: 100%;
+    // max-width: 800px;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    // margin: 0 auto;
     margin-top: rem(40);
     overflow: hidden;
+    @include mq(tab){
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: rem(40);
+        overflow: hidden;
+    }
 
     //メイン
     &-slider {
@@ -103,8 +112,11 @@
 
         .swiper-slide {
             width: auto;
-            height: 400px;
-            
+            height: 250px;
+            @include mq(tab){
+                width: auto;
+                height: 400px;
+            }
             img {
                 display: block;
                 width: auto;
@@ -117,17 +129,29 @@
     //サムネイル
     &-thumbs {
         width: 100%;
-        height: rem(90);
+        height: rem(160);
         padding: 0;
         overflow: hidden;
+        @include mq(tab){
+            width: 100%;
+            height: rem(90);
+            padding: 0;
+            overflow: hidden;
+        }
 
         .swiper-slide {
-            width: 100px;
-            height: rem(90);
+            width: rem(160);
+            height: rem(160);
             text-align: center;
             overflow: hidden;
             opacity: 0.1;
-            
+            @include mq(tab){
+                width: 100px;
+                height: rem(90);
+                text-align: center;
+                overflow: hidden;
+                opacity: 0.1;
+            }
             &-active {
                 opacity: 1;
             }
@@ -135,6 +159,7 @@
             img {
                 width: auto;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -156,10 +181,24 @@
 }
 
 .swiper-button-prev{
-    left: 50px !important;
+    left: 20px !important;
+    @include mq(tab){
+        left: 50px !important;
+    }
 }
 .swiper-button-next{
-    right: 50px !important;
+    right: 20px !important;
+    @include mq(tab){
+        right: 50px !important;
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    font-size: 20px !important;
+    @include mq(tab){
+        font-size: 36px !important;
+    }
 }
 
 .swiper-button-next::after,
@@ -167,5 +206,8 @@
     color: #FFEA2E;
     background: #111111;
     border-radius: 50%;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    @include mq(tab){
+        padding: 10px 20px;
+    }
 }
