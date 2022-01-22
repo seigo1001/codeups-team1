@@ -1,0 +1,16 @@
+.c-oblique-line {
+  position: relative;
+  width: 100%;
+}
+
+.c-oblique-line::before {
+  position: absolute;
+  top: rem(458);
+  z-index: 0;
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  transform: skewY(61.09deg);
+  background-color: $Yellow;
+  content: "";
+}

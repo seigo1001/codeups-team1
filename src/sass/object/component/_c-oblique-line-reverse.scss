@@ -1,0 +1,14 @@
+.c-oblique-line-reverse {
+  position: relative;
+}
+
+.c-oblique-line-reverse::before {
+  position: absolute;
+  top: rem(971);
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  transform: skewY(105.05deg);
+  background-color: $Yellow;
+  content: "";
+}

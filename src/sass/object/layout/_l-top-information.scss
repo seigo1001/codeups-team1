@@ -1,0 +1,14 @@
+.l-top-information {
+  margin-top: rem(24);
+  margin-right: rem(19);
+  margin-left: rem(20);
+}
+
+.l-top-information__btn {
+  margin-top: rem(28);
+  margin-left: rem(1);
+
+  @include mq() {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.p-top-information {
+  @include mq() {
+    display: flex;
+  }
+}
+.p-top-information__text {
+  line-height: 1.5;
+  margin-top: rem(16);
+
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.p-top-infomrmation__date {
+  margin-top: rem(3);
+  margin-right: rem(32);
+
+  @include mq() {
+    margin-top: 0;
+  }
+}

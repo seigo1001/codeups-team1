@@ -44,13 +44,20 @@
 }
 
 .p-top-work__pagination {
-  top: 260px !important;
+  bottom: rem(-21) !important;
+  left: rem(-2) !important;
 }
 
 .p-top-work__pagination > .swiper-pagination-bullet {
+  margin-right: rem(5.5) !important;
+  margin-left: rem(5.5) !important;
   background: $Gray;
 }
 
 .p-top-work__pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: $Yellow;
+}
+
+.p-top-work__inner {
+  position: relative;
 }

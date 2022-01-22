@@ -9,11 +9,12 @@
   align-items: center;
   height: rem(50);
   padding: rem(8) 0 0 rem(22);
+  background: #111111;
   opacity: 0.7;
   transition: all 0.4s;
 
-  background: #111111;
   @include mq() {
+    height: rem(53);
     padding: 0 0 0 rem(33);
     margin-top: rem(-2);
   }
