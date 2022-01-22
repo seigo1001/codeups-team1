@@ -1,17 +1,56 @@
-.p-top-work{
+.p-top-work {
+  background: $Sub-color;
+
+  @include mq() {
     padding: rem(80) rem(90);
-    background: linear-gradient(90deg, #000000 0%, #000000 30%, #333333 30%, #333333 100%);
+    background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 30%,
+    #333333 30%,
+    #333333 100%
+    );
+  }
 }
-.p-top-workRev{
-    padding: rem(80) rem(90);
-    background: linear-gradient(90deg, #333333 0%, #333333 70%, #000000 70%, #000000 100%);
+.p-top-workRev {
+  padding: rem(80) rem(90);
+  background: linear-gradient(
+  90deg,
+  #333333 0%,
+  #333333 70%,
+  #000000 70%,
+  #000000 100%
+  );
 }
-.p-top-work__wrap{
-    display: flex;
-    align-items: center;
+
+.p-top-work__wrap {
+  position: relative;
+}
+
+.p-top-work__wrap {
+  display: flex;
+  align-items: center;
+
+  @include mq() {
     width: 93%;
     margin-left: auto;
+
+    flex-direction: row;
+  }
+  flex-direction: column;
 }
-.reverse{
-    flex-direction: row-reverse;
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.p-top-work__pagination {
+  top: 260px !important;
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet {
+  background: $Gray;
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $Yellow;
 }
