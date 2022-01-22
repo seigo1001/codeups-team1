@@ -1,8 +1,9 @@
 .p-footer{
     background-color: #111111;
     text-align: center;
-    padding: rem(48) rem(0);
+    padding: rem(15) rem(0);
     @include mq(){
+        padding: rem(48) rem(0);
         padding-left: rem(32);
         padding-right: rem(32);
     }
