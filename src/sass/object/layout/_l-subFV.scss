@@ -55,3 +55,10 @@
         padding: 156px 0;
     }
 }
+
+.l-news .c-subfv{
+    padding: rem(184) 0;
+    @include mq(tab){
+        padding: rem(156) 0;
+    }
+}
