@@ -7,9 +7,9 @@
   margin: 0 auto;
 }
 .p-works__wrap .c-breadcrumb-list{
-  margin-bottom: rem(85);
+  margin-bottom: rem(70);
   @include mq(tab){
-    margin-bottom: rem(115);
+    margin-bottom: rem(96);
   }
 }
 .p-works__wrap .c-breadcrumb-list__menu{
@@ -17,7 +17,7 @@
 }
 
 .p-works__items {
-    @include mq() {
+    @include mq(tab) {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -25,8 +25,18 @@
 }
 
 .p-works__item {
-    @include mq() {
-     margin-top: rem(44);
-     margin-bottom: rem(70);
+  margin-bottom: rem(24);
+    @include mq(tab) {
+     margin-top: rem(24);
+     margin-bottom: rem(80);
     }
+}
+
+.p-works__pagenation {
+  margin-top: rem(58);
+  margin-bottom: rem(112);
+  @include mq(tab) {
+    margin-top: rem(16);
+    margin-bottom: rem(144);
+  }
 }
