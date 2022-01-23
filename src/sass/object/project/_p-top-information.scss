@@ -1,6 +1,7 @@
 .p-top-information {
   @include mq() {
     display: flex;
+    justify-content: center;
   }
 }
 .p-top-information__text {
@@ -9,6 +10,7 @@
 
   @include mq() {
     margin-top: 0;
+    margin-right: rem(48);
   }
 }
 
@@ -17,6 +19,12 @@
   margin-right: rem(32);
 
   @include mq() {
-    margin-top: 0;
+    margin-top: rem(1);
   }
+}
+
+.p-top-information__text.c-news-information:hover {
+  color: $White;
+
+  text-decoration: underline;
 }

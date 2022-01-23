@@ -24,6 +24,10 @@
 .c-blog-card__contents {
   padding: rem(4) rem(24) rem(15) rem(23);
   background: #ffffff;
+
+  @include mq() {
+    padding: rem(4) rem(22) rem(16) rem(26);
+  }
 }
 .c-blog-card__contents:hover {
   background: #333333;
@@ -64,12 +68,20 @@
   margin-top: rem(3);
   color: #000000;
   font-size: rem(14);
+
+  @include mq() {
+    margin-top: rem(7);
+  }
 }
 .c-blog-card__item {
   display: flex;
   justify-content: space-between;
   max-width: rem(322);
   margin: rem(7) auto 0;
+
+  @include mq() {
+    margin-top: rem(9);
+  }
 }
 .c-blog-card__category {
   line-height: 1;

@@ -2,7 +2,7 @@
   background: $Sub-color;
 
   @include mq() {
-    padding: rem(80) rem(90);
+    padding: rem(82) rem(90) rem(80);
     background: linear-gradient(
     90deg,
     #000000 0%,
@@ -32,9 +32,6 @@
   align-items: center;
 
   @include mq() {
-    width: 93%;
-    margin-left: auto;
-
     flex-direction: row;
   }
   flex-direction: column;
@@ -46,6 +43,11 @@
 .p-top-work__pagination {
   bottom: rem(-21) !important;
   left: rem(-2) !important;
+
+  @include mq() {
+    bottom: rem(-31) !important;
+    left: rem(-20) !important;
+  }
 }
 
 .p-top-work__pagination > .swiper-pagination-bullet {
@@ -60,4 +62,8 @@
 
 .p-top-work__inner {
   position: relative;
+
+  @include mq() {
+    width: 214%;
+  }
 }

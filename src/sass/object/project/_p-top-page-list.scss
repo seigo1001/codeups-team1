@@ -2,11 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  @include mq() {
+  }
 }
 
 .p-top-page-list__item {
   position: relative;
   width: 50%;
+
+  @include mq() {
+    width: 25%;
+  }
 }
 
 .p-top-page-list__link {
@@ -44,4 +51,8 @@
   color: $text-color;
   font-size: rem(20);
   text-align: center;
+
+  @include mq() {
+    font-size: rem(25);
+  }
 }

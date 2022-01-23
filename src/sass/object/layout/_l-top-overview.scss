@@ -1,3 +1,7 @@
 .l-top-overview {
   margin-top: rem(84);
+
+  @include mq() {
+    margin-top: rem(205);
+  }
 }
