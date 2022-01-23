@@ -1,5 +1,10 @@
 .c-pagination{
     background: #111111;
+    padding-top: rem(20);
+    padding-bottom: rem(112);
+    @include mq(tab){
+        padding-top: rem(80);
+    }
 }
 .c-pagination__wrap{
     background: #111111;
@@ -8,7 +13,7 @@
     color: #ffffff;
     text-align: center;
     max-width: rem(340);
-    width: 89%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -27,7 +32,9 @@
 
 .c-pagination__prev,
 .c-pagination__next{
-    padding: rem(1) rem(13);
+    padding: rem(0) rem(11);
+    font-size: rem(16);
+    letter-spacing: 0.2em;
 }
 
 .c-pagination__page{
