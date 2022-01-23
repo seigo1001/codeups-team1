@@ -1,10 +1,9 @@
 .p-footer{
     background-color: #111111;
     text-align: center;
-    padding: rem(48) rem(0);
-    @include mq(){
-        padding-left: rem(32);
-        padding-right: rem(32);
+    padding: rem(50) rem(0);
+    @include mq(tab){
+        padding: rem(30) rem(32) rem(30) rem(32);
     }
 }
 
@@ -16,7 +15,7 @@
         margin-bottom: rem(75);
     }
     img {
-        @include mq(){
+        @include mq(tab){
             height: rem(38);
         }
     }
@@ -24,8 +23,8 @@
 
 .p-footer__items{
     margin-top: rem(8);
-    margin-bottom: rem(32);
-    @include mq(){
+    margin-bottom: rem(16);
+    @include mq(tab){
         display: flex;
         margin-bottom: rem(0);
     }
