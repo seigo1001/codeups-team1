@@ -1,7 +1,10 @@
 .p-work-detail {
-  padding-top: rem(70);
+  padding-top: rem(50);
   padding-bottom: rem(150);
   background-color: #111111;
+  @include mq(tab){
+    padding-top: rem(70);
+  }
 }
 
 .p-work-detail__cards {
@@ -40,4 +43,24 @@
     max-width: rem(800);
     margin: 0 auto;
   }
+}
+.p-work-detail__title{
+  margin-top: rem(41);
+  margin-bottom: rem(20);
+  font-size: rem(20);
+  @include mq(tab){
+    margin-top: rem(50);
+  }
+}
+
+.p-work-detail .c-news-DateCat__date{
+  font-size: rem(17) !important;
+  margin-right: rem(34) !important;
+}
+.p-work-detail .c-news-DateCat__category{
+  font-size: rem(18) !important;
+}
+.p-work-detail .c-pagination__all{
+  padding-left: rem(15) !important;
+  padding-right: rem(15) !important;
 }
