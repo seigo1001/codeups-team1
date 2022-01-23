@@ -5,7 +5,7 @@
   <body>
     <%- include('./common/_header') %>
 
-      <section class="l-blog sublayer">
+      <section class="l-blog sublayer p-blog">
         <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
 
         <div class="p-blog__wrap">
@@ -21,6 +21,7 @@
 
 
         <%- include('./common/_footer') %>
+        <%- include('./parts/_c-btn-pageTop') %>
 
         <script>
           var searchItem = ".search__item"; //絞り込み項目を選択するエリア

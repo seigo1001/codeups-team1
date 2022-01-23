@@ -1,11 +1,14 @@
 .p-about {
     background-color: #000;
+    @include mq(tab) {
+        margin-bottom: rem(88);
+    }
 }
 
 .p-about__wrap {
-    margin-top: rem(103);
+    margin-top: rem(72);
     @include mq(tab) {
-        margin-top: rem(147);
+        margin-top: rem(106);
     }
 }
 
@@ -20,10 +23,10 @@
 }
 
 .p-about-wrap__map {
-    margin-top: rem(120);
+    margin-top: rem(118);
     padding-bottom: rem(120);
     @include mq(tab) {
-        margin-top: rem(40);
+        margin-top: rem(120);
         padding-bottom: rem(60);
     }
 }
