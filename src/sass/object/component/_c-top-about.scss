@@ -71,7 +71,10 @@
   padding-top: rem(23);
 
   @include mq(tab) {
+    width: 229%;
     padding-top: 0;
+    padding-right: rem(47);
+    padding-left: rem(32);
   }
 }
 
@@ -83,25 +86,28 @@
 
   @include mq(tab) {
     letter-spacing: 0.02em;
+    margin-top: rem(8);
     font-size: rem(25);
     text-align: left;
   }
 }
 
 .c-top-about-body__text {
-  line-height: 1.5;
-  letter-spacing: rem(2);
+  line-height: 1.43;
+  letter-spacing: 0.12em;
   margin-top: rem(21);
   color: #ffffff;
   font-size: rem(16);
 
   @include mq(tab) {
-    margin-top: rem(48);
+    line-height: 2.1875;
+    letter-spacing: 0.03125em;
+    margin-top: rem(35);
   }
 }
 
 .c-top-about-body__btn {
-  margin-top: rem(21);
+  margin-top: rem(27);
   margin-right: rem(1);
   text-align: center;
 
@@ -114,4 +120,9 @@
 .c-top-about-body__btn > .c-btn {
   padding-top: rem(8);
   padding-bottom: rem(8);
+
+  @include mq() {
+    padding-top: rem(15);
+    padding-bottom: rem(17);
+  }
 }

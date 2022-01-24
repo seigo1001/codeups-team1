@@ -2,7 +2,7 @@
   background: $Sub-color;
 
   @include mq() {
-    padding: rem(82) rem(90) rem(80);
+    padding: rem(81) rem(46) rem(77) rem(90);
     background: linear-gradient(
     90deg,
     #000000 0%,
@@ -25,9 +25,6 @@
 
 .p-top-work__wrap {
   position: relative;
-}
-
-.p-top-work__wrap {
   display: flex;
   align-items: center;
 
@@ -64,6 +61,5 @@
   position: relative;
 
   @include mq() {
-    width: 214%;
   }
 }

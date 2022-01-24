@@ -39,16 +39,7 @@
     transition: 0.6s;
   }
 }
-.c-blog-card__body {
-  max-width: rem(322);
-  padding: rem(4) rem(14) rem(11);
-  margin: 0 rem(7) 0 rem(9);
-  text-align: left;
 
-  @include mq(tab) {
-    padding: rem(4.8) rem(9.6) rem(16) rem(9.6);
-  }
-}
 .c-blog-card__title {
   max-width: rem(322);
   line-height: 1.9;
