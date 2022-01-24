@@ -19,7 +19,7 @@
 }
 .c-blog-card__contents{
     background: #fff;
-    padding: 0 0 rem(16) 0;
+    padding: 0 0 rem(22.4) 0;
 }
 .c-blog-card__contents:hover {
     background: #333333;
@@ -41,8 +41,11 @@
 .c-blog-card__body {
     max-width: rem(322);
     margin: auto;
-    padding: rem(10);
+    padding: rem(8) rem(14);
     text-align: left;
+    @include mq(tab) {
+        padding: rem(4.8) rem(9.6) rem(16) rem(9.6);
+    }
 }
 .c-blog-card__title {
     max-width: rem(322);
@@ -55,24 +58,31 @@
 .c-blog-card__text {
     max-width: rem(322);
     font-size: rem(14);
-    line-height: 1.8;
+    line-height: rem(26);
     letter-spacing: 1px;
     color: #000;
+    margin-top: rem(1);
 }
 .c-blog-card__item {
     max-width: rem(322);
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 rem(10);
+    padding: 0 rem(16) 0 rem(14);
+    @include mq(tab) {
+        padding: 0  rem(10) 0 rem(14);
+    }
 }
 .c-blog-card__category {
 font-size: rem(14);
 line-height: 1;
-letter-spacing: 0.01em;
+letter-spacing: rem(1);
 background: #EFDB2A;
-padding: rem(5);
+padding: rem(4) rem(6);
+color: #333;
 }
 .c-blog-card__time{
 color: #000;
+font-size: rem(14);
+letter-spacing: rem(1);
 }

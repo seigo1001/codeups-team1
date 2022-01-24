@@ -1,6 +1,7 @@
 .p-blog-items {
-  margin-top: rem(40);
-    @include mq() {
+  margin-top: rem(16);
+    @include mq(tab) {
+      margin-top: rem(25.6);
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -8,7 +9,10 @@
   }
 
   .p-blog__item{
-    margin-bottom: rem(50);
+    margin-bottom: rem(24);
+    @include mq(tab) {
+      margin-bottom: rem(44.8);
+    }
   }
 
   .p-blog__item--new {
