@@ -16,11 +16,10 @@
 }
 
 .c-blog-card__img {
-  max-width: rem(350);
   background: #ffffff;
 }
 .c-blog-card__contents {
-  padding: 0 0 rem(22.4) 0;
+  padding: 0 0 rem(18.4) 0;
   background: #ffffff;
 }
 .c-blog-card__contents:hover {
@@ -42,8 +41,8 @@
 }
 .c-blog-card__body {
   max-width: rem(322);
-  padding: rem(8) rem(14);
-  margin: auto;
+  padding: rem(4) rem(14) rem(11);
+  margin: 0 rem(7) 0 rem(9);
   text-align: left;
 
   @include mq(tab) {
