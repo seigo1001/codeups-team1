@@ -9,3 +9,19 @@
         margin: 0 auto;
     }
 }
+
+.p-blog__wrap .search {
+    margin-top: rem(70);
+    @include mq(tab) {
+        margin-top: rem(96);
+    }
+}
+
+.p-blog .c-pagination {
+    margin-top: rem(78.4);
+    margin-bottom: rem(115.2);
+    @include mq(tab) {
+        margin-top: rem(51.2);
+        margin-bottom: rem(147.2);
+    }
+}
