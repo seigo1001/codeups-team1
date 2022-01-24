@@ -12,20 +12,8 @@
         <div class="c-work-detail-title p-work-detail__title">〇〇株式会社様 制作実績</div>
         <%- include('./parts/_c-news-DateCat') %>
 
-         <!-- <%- include('./parts/_c-slick-sample') %> -->
         <%- include('./parts/_c-swiper') %>
 
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-        <!-- </div> -->
-        <!-- <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide ４</div>
-          </div>
-        </div> -->
 
         <%- include('./parts/_c-works-detail-point', {title: '制作のポイント'})
         %> <%- include('./parts/_c-works-detail-point', {title:
@@ -44,69 +32,6 @@
     %>
 
     <%- include('./parts/_c-btn-pageTop') %>
-
-    <script>
-      $(function(){
-        // $('.slide').slick({
-        //   slidesToShow: 1,
-        //   slidesToScroll: 1,
-        //   arrows: false,
-        //   fade: false,
-        //   asNavFor: 'slide-navigation'
-        // });
-        // $('.slide-navigation').slick({
-        //   slidesToShow: 8,
-        //   slidesToScroll: 1,
-        //   asNavFor: 'slide',
-        //   dots: false,
-        //   autoplay: true,
-        //   autoplaySpeed: 1000,
-        //   centerMode: true,
-        //   focusOnSelect: true,
-        //   responsive: [
-        //     {
-        //       breakpoint: 780,
-        //       settings: {
-        //         slidesToShow: 1
-        //       }
-        //     }
-        //   ]
-        // });
-
-      });
-    </script>
-    <script>
-      // window.onload = function() {
-      // //メイン
-      // var slider = new Swiper ('.c-gallery-slider', {
-      //     slidesPerView: 1,
-      //     centeredSlides: true,
-      //     loop: true,
-      //     loopedSlides: 8,
-      //     navigation: {
-      //       nextEl: '.swiper-button-next',
-      //       prevEl: '.swiper-button-prev',
-      //     },
-      // });
-
-      // //サムネイル
-      // var thumbs = new Swiper ('.c-gallery-thumbs', {
-      //     slidesPerView: 'auto',
-      //     spaceBetween: 10,
-      //     centeredSlides: true,
-      //     loop: true,
-      //     slideToClickedSlide: true,
-      // });
-
-      // //3系
-      // // slider.params.control = thumbs;
-      // // thumbs.params.control = slider;
-
-      // //4系
-      // slider.controller.control = thumbs;
-      // thumbs.controller.control = slider;
-      // };
-    </script>
 
   </body>
 </html>
