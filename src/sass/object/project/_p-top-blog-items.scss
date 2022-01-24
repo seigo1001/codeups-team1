@@ -1,0 +1,7 @@
+.p-top-blog-items {
+  @include mq() {
+    display: flex;
+    justify-content: center;
+    margin-right: rem(-25);
+  }
+}

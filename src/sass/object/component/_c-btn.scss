@@ -1,48 +1,74 @@
 .c-btn {
   position: relative;
   display: inline-block;
-  max-width: rem(334);
   width: 100%;
-  text-align: center;
-  padding: rem(10);
-  border: 1px solid #fff;
-  font-size: rem(20);
+  max-width: rem(334);
   letter-spacing: rem(2);
-  transition: ease .3s;
-  background: #333;
+  padding: rem(10);
+  padding-top: rem(8);
+  padding-bottom: rem(7);
+  border: 1px solid #ffffff;
+  background: #333333;
+  font-size: rem(20);
+  text-align: center;
+  transition: ease 0.3s;
+
   @include mq(tab) {
     max-width: rem(360);
-    font-size: rem(16);
+    padding-top: rem(16);
+    padding-bottom: rem(16);
     font-weight: 500;
-    
-  } 
+    font-size: rem(16);
+  }
 }
 
 .c-btn span {
   position: relative;
   z-index: 3;
-  color: #fff;
+  color: #ffffff;
 }
 
 .c-btn:hover span {
-  color: #333;
+  color: #333333;
 }
 
 .c-btn--bgleft:before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
   z-index: 2;
-  background: #fff;
   width: 100%;
   height: 100%;
-  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transform: scale(0, 1);
+  background: #ffffff;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  content: "";
+
   transform-origin: right top;
 }
 
 .c-btn--bgleft:hover:before {
+  transform: scale(1, 1);
+
   transform-origin: left top;
-  transform: scale(1,1);
+}
+
+.c-btn__text {
+  display: inline;
+
+  @include mq() {
+    font-size: rem(20);
+  }
+}
+
+.c-btn--bgleft:hover > .c-btn__text {
+  display: none;
+}
+
+.c-btn__hover {
+  display: none;
+}
+
+.c-btn--bgleft:hover > .c-btn__hover {
+  display: inline;
 }

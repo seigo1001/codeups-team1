@@ -1,17 +1,69 @@
-.p-top-work{
-    padding: rem(80) rem(90);
-    background: linear-gradient(90deg, #000000 0%, #000000 30%, #333333 30%, #333333 100%);
+.p-top-work {
+  background: $Sub-color;
+
+  @include mq() {
+    padding: rem(82) rem(90) rem(80);
+    background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 30%,
+    #333333 30%,
+    #333333 100%
+    );
+  }
 }
-.p-top-workRev{
-    padding: rem(80) rem(90);
-    background: linear-gradient(90deg, #333333 0%, #333333 70%, #000000 70%, #000000 100%);
+.p-top-workRev {
+  padding: rem(80) rem(90);
+  background: linear-gradient(
+  90deg,
+  #333333 0%,
+  #333333 70%,
+  #000000 70%,
+  #000000 100%
+  );
 }
-.p-top-work__wrap{
-    display: flex;
-    align-items: center;
-    width: 93%;
-    margin-left: auto;
+
+.p-top-work__wrap {
+  position: relative;
 }
-.reverse{
-    flex-direction: row-reverse;
+
+.p-top-work__wrap {
+  display: flex;
+  align-items: center;
+
+  @include mq() {
+    flex-direction: row;
+  }
+  flex-direction: column;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.p-top-work__pagination {
+  bottom: rem(-21) !important;
+  left: rem(-2) !important;
+
+  @include mq() {
+    bottom: rem(-31) !important;
+    left: rem(-20) !important;
+  }
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet {
+  margin-right: rem(5.5) !important;
+  margin-left: rem(5.5) !important;
+  background: $Gray;
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $Yellow;
+}
+
+.p-top-work__inner {
+  position: relative;
+
+  @include mq() {
+    width: 214%;
+  }
 }

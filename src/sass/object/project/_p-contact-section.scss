@@ -1,13 +1,13 @@
 .p-contact-section {
-  background: #3D3D3D;
+  background: #3d3d3d;
 }
 
 .p-contact-section__wrap {
-  padding: rem(40) rem(20) rem(60) rem(20);
+  padding: rem(30) rem(20) rem(64) rem(20);
   text-align: center;
 
   @include mq(tab) {
-    padding: rem(150) rem(20);
+    padding: rem(150) rem(20) rem(149);
   }
 }
 
@@ -15,39 +15,43 @@
   position: relative;
 
   @include mq(tab) {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     max-width: rem(1280);
+    margin: 0 auto;
   }
 }
 
 .p-contact-section__logo {
   @include mq(tab) {
     position: absolute;
-    left: 6%;
-    top: rem(-68);
+    top: rem(-56);
+    left: 7%;
   }
 }
 
 .p-contact-section__title {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: 86%;
-  font-size: rem(25);
-  letter-spacing: rem(2);
-  color: #fff;
+  left: 50%;
   line-height: 0.4;
+  letter-spacing: rem(2);
+  transform: translateX(-50%);
   padding: 0 0 rem(15) 0;
+  color: #ffffff;
+  color: #ffffff;
+  font-size: rem(25);
+  font-size: rem(20);
 
   @include mq(tab) {
-    font-size: rem(30);
     line-height: 1;
     padding: 0 0 rem(5) 0;
-
+    font-size: rem(30);
   }
+}
+
+.p-contact-section__logo.p-contact-section__logo--overview {
+  top: rem(-9);
 }
 
 .p-contact-section__heading {
@@ -55,38 +59,39 @@
 }
 
 .p-contact-section__text {
-  font-size: rem(16);
-  color: #fff;
-  max-width: rem(375);
-  letter-spacing: rem(2);
   width: 100%;
-  margin: auto;
-  padding: rem(30) 0 rem(48) 0;
-  text-align: left;
+  max-width: rem(375);
   line-height: rem(23);
+  letter-spacing: rem(2);
+  padding: rem(15) 0 rem(46) 0;
+  margin: auto;
+  color: #ffffff;
+  font-size: rem(16);
+  text-align: left;
 
   @include mq(tab) {
-    max-width: rem(520);
-    padding: rem(60) 0 rem(32) 0;
     width: 100%;
+    max-width: rem(712);
+    padding: rem(22) 0 rem(61) 0;
   }
 }
 
 .p-contact-section__btn-link {
   position: relative;
-  border: 1px solid #ffffff;
-  margin: 0 auto;
-  max-width: 360px;
   display: flex;
-  text-align: center;
-  padding: rem(8) 0;
-  background: #333333;
-  font-size: rem(20);
-  color: #ffffff;
-  overflow: hidden;
+  justify-content: center;
+  max-width: 360px;
   letter-spacing: rem(2);
+  padding: rem(8) 0;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  background: #333333;
+  color: #ffffff;
+  font-size: rem(20);
+
+  overflow: hidden;
   @include mq(tab) {
-    padding: rem(18) 0;
+    padding: rem(13) rem(10) rem(13) 0;
     font-size: rem(16);
   }
 }
@@ -97,41 +102,24 @@
 }
 
 .btn-text {
+  z-index: 10;
   width: 100%;
   height: 100%;
-  z-index: 10;
 }
 
 .btn-text:before {
-  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 0;
-  display: block;
-  background: #ffffff;
   z-index: -1;
-  transition: .3s;
-}
-
-.btn-text:hover {
-  color: #333333;
-}
-
-.btn-text:hover:before {
-  width: 100%;
-}
-
-.btn-hover {
   display: block;
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  display: block;
+  width: 0;
   background: #ffffff;
-  z-index: 11;
-  transition: .3s;
-  color: #333333;
-  opacity: 0;
+  transition: 0.3s;
+  content: "";
+}
+
+.p-contact-section__logo.p-contact-section__logo--top {
+  top: rem(-102);
+  left: 5.7%;
 }

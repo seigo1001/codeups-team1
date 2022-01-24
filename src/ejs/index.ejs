@@ -3,21 +3,199 @@
   <%- include('./common/_head') %>
 
   <body>
-    <div style="background-color: #000" class="bg">
-      <%- include('./common/_header') %>
-        <div class="l-test-inner">
-        <%- include('./parts/_p-works-items') %>
-        </div>
+    <%- include('./common/_header') %>
+    <div class="l-top p-top">
+      <!-- メインビュー -->
+      <div class="l-mv"><%- include('./parts/_p-mv') %></div>
 
-        <%- include('./parts/_p-top-work') %>
-        <%- include('./parts/_p-top-workRev') %>
-
-        <%- include('./parts/_c-top-about') %>
+      <!-- 記事リンク -->
+      <div class="l-top-information p-top-information">
+        <div class="c-news-DateCat">
+          <p class="c-news-DateCat__date p-top-infomrmation__date">
+            2020.07.20
+          </p>
+          <span class="c-news-DateCat__category">お知らせ </span>
         </div>
-        <%- include('./common/_footer') %>
-      <div class="l-top p-top"><%- include('./parts/_p-mv') %></div>
-      <%- include('./common/_footer') %>
-      <%- include('./parts/_c-btn-pageTop') %>
+        <p class="c-news-information p-top-information__text">
+          <a href="#"
+            >記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a
+          >
+        </p>
+        <div class="l-top-information__btn">
+          <%- include('./parts/_c-btn.ejs' ,{link:'#', text:'すべて見る'}) %>
+        </div>
+        <div class="l-top-information__more-btn">
+          <a href="#" class="c-more-btn c-more-btn--bgleft">
+            <span class="c-more-btn__text">すべて見る</span>
+          </a>
+        </div>
+      </div>
+      <!-- 斜線 -->
+      <div class="c-oblique-line"></div>
+
+      <!-- 事業内容 -->
+      <div class="l-top-content p-top-content">
+        <div class="p-section-title">
+          <div class="p-contact-section__logo">
+            <div class="p-section-tilte__logo">
+              <span class="c-section-title__english">Content</span>
+            </div>
+          </div>
+          <div class="p-section-title__heading">
+            <h3 class="p-section-title__text">事業内容</h3>
+          </div>
+        </div>
+        <div class="p-top-content__list">
+          <ul class="p-top-page-list">
+            <li class="p-top-page-list__item">
+              <a href="#" class="p-top-page-list__link">
+                <picture class="p-top-page-list__picture">
+                  <source
+                    srcset="../images/top/top-page-list-image1-pc.png"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="../images/top/top-page-list-image1.png"
+                    alt=""
+                    class="p-top-page-list__img"
+                  />
+                </picture>
+                <span class="p-top-page-list__title">経営理念ページへ</span>
+              </a>
+            </li>
+            <li class="p-top-page-list__item">
+              <a href="#" class="p-top-page-list__link">
+                <picture class="p-top-page-list__picture">
+                  <source
+                    srcset="../images/top/top-page-list-image2-pc.png"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="../images/top/top-page-list-image2.png"
+                    alt=""
+                    class="p-top-page-list__img"
+                  />
+                </picture>
+                <span class="p-top-page-list__title">理念1へ</span>
+              </a>
+            </li>
+            <li class="p-top-page-list__item">
+              <a href="#" class="p-top-page-list__link">
+                <picture class="p-top-page-list__picture">
+                  <source
+                    srcset="../images/top/top-page-list-image3-pc.png"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="../images/top/top-page-list-image3.png"
+                    alt=""
+                    class="p-top-page-list__img"
+                  />
+                </picture>
+                <span class="p-top-page-list__title">理念2へ</span>
+              </a>
+            </li>
+            <li class="p-top-page-list__item">
+              <a href="#" class="p-top-page-list__link">
+                <picture class="p-top-page-list__picture">
+                  <source
+                    srcset="../images/top/top-page-list-image4-pc.png"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="../images/top/top-page-list-image4.png"
+                    alt=""
+                    class="p-top-page-list__img"
+                  />
+                </picture>
+                <span class="p-top-page-list__title">理念3へ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 斜線 -->
+      <div class="c-oblique-line-reverse"></div>
+
+      <!-- 制作実績 -->
+      <div class="l-top-works p-top-works">
+        <div class="p-section-title">
+          <div
+            class="p-contact-section__logo p-section-title__logo-wrap--reverse"
+          >
+            <div class="p-section-title__logo p-section-title__logo--reverse">
+              <span class="c-section-title__english">Works</span>
+            </div>
+          </div>
+          <div class="p-section-title__heading">
+            <h3 class="p-section-title__text">制作実績</h3>
+          </div>
+        </div>
+        <div class="p-top-works__item">
+          <%- include('./parts/_p-top-work') %>
+        </div>
+      </div>
+
+      <!-- 企業概要 -->
+      <div class="l-top-overview p-top-overview">
+        <div class="p-section-title">
+          <div class="p-contact-section__logo">
+            <div
+              class="p-contact-section__logo p-contact-section__logo--overview"
+            >
+              <div class="p-section-tilte__logo">
+                <span class="c-section-title__english">Overview</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-section-title__heading">
+            <h3 class="p-section-title__text">企業概要</h3>
+          </div>
+        </div>
+        <div class="p-top-overview__card">
+          <%- include('./parts/_c-top-about') %>
+        </div>
+      </div>
+
+      <!-- ブログ -->
+      <div class="l-top-blog p-top-blog">
+        <div class="p-section-title">
+          <div class="p-contact-section__logo">
+            <div
+              class="p-contact-section__logo p-section-title__logo-wrap--reverse"
+            >
+              <div
+                class="p-section-title__logo p-section-title__logo--reverse-blog"
+              >
+                <span class="c-section-title__english">Blog</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-section-title__heading">
+            <h3 class="p-section-title__text">ブログ</h3>
+          </div>
+        </div>
+        <%- include('./parts/_p-top-blog-items') %>
+        <div class="p-top-blog__btn">
+          <%- include('./parts/_c-btn.ejs' ,{link:'#', text:'詳しく見る'}) %>
+        </div>
+      </div>
     </div>
+
+    <!-- お問い合わせ -->
+    <div class="l-top-contact p-top-contact">
+      <%- include('./parts/_p-contact-section') %>
+    </div>
+
+    <!-- フッター -->
+    <%- include('./common/_footer') %>
+
+    <!-- トップへ戻るボタン -->
+    <%- include('./parts/_c-btn-pageTop') %>
   </body>
 </html>

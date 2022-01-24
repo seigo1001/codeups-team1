@@ -1,25 +1,26 @@
-.c-news-DateCat{
-   display: flex;
+.c-news-DateCat {
+  display: flex;
+  align-items: flex-start;
 }
 
 .c-news-DateCat__date {
-   color: #fff;
-   margin-right: rem(29);
-   @include mq() {
-     margin-right: rem(48);
-   }
- }
+  margin-right: rem(29);
+  color: #ffffff;
+
+  @include mq() {
+    margin-right: rem(48);
+  }
+}
 
 .c-news-DateCat__category {
-   color: #fff;
-   padding: rem(2) rem(21) rem(2) rem(20);
-   border: 1px solid #fff;
-   font-size: rem(14);
-   white-space: nowrap;
- 
-   @include mq() {
-     margin-right: rem(64);
-     padding-bottom: rem(5);
-   }
- }
- 
+  padding: rem(2) rem(21) rem(2) rem(20);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: rem(14);
+
+  white-space: nowrap;
+  @include mq() {
+    padding-bottom: rem(5);
+    margin-right: rem(64);
+  }
+}

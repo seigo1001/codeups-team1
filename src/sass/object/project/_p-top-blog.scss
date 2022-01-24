@@ -1,0 +1,21 @@
+.p-top-blog__cards {
+  margin-top: rem(64);
+}
+
+.p-top-blog__btn {
+  margin-top: rem(23);
+  text-align: center;
+
+  @include mq() {
+    margin-top: rem(48);
+  }
+}
+
+.p-top-blog__item {
+  margin-top: rem(24);
+
+  @include mq() {
+    margin-top: 0;
+    margin-right: rem(25);
+  }
+}

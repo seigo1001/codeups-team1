@@ -1,0 +1,7 @@
+.l-top-content {
+  margin-top: rem(82);
+
+  @include mq() {
+    margin-top: rem(196);
+  }
+}

@@ -1,0 +1,7 @@
+.p-top-overview__card {
+  margin-top: rem(42);
+
+  @include mq() {
+    margin-top: rem(37);
+  }
+}

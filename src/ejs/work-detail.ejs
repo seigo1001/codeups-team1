@@ -2,13 +2,8 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_header') %>
-    <% 
-      const blogInfo = {
-      date: '2020.07.20',
-      category: 'カテゴリ'
-      }
-    %>
+    <%- include('./common/_header') %> <% const blogInfo = { date: '2020.07.20',
+    category: 'カテゴリ' } %>
     <section class="p-work-detail">
 
       <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'制作実績 > 制作実績詳細'}) %>
@@ -17,27 +12,36 @@
         <div class="c-work-detail-title p-work-detail__title">〇〇株式会社様 制作実績</div>
         <%- include('./parts/_c-news-DateCat') %>
 
-        <!-- <%- include('./parts/_c-slick-sample') %> -->
+         <%- include('./parts/_c-slick-sample') %>
         <%- include('./parts/_c-swiper') %>
 
-        <%- include('./parts/_c-works-detail-point', {title: '制作のポイント'}) %>
-        <%- include('./parts/_c-works-detail-point', {title: 'デザインのポイント'}) %>
-        <%- include('./parts/_c-works-detail-point', {title: 'その他'}) %>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide ４</div>
+          </div>
+        </div>
 
-        <%- include('./parts/_c-pagination-simple') %>
+        <%- include('./parts/_c-works-detail-point', {title: '制作のポイント'})
+        %> <%- include('./parts/_c-works-detail-point', {title:
+        'デザインのポイント'}) %> <%- include('./parts/_c-works-detail-point',
+        {title: 'その他'}) %> <%- include('./parts/_c-pagination-simple') %>
       </div>
-      
+
       <%- include('./parts/_c-btn-article') %>
       <div class="p-work-detail__cards">
-        <% for(var i = 0; i < 4; i++) { %>
-          <%- include('./parts/_p-work-cards') %>
-        <% } %>
+        <% for(var i = 0; i < 4; i++) { %> <%- include('./parts/_p-work-cards')
+        %> <% } %>
       </div>
     </section>
 
-    <%- include('./parts/_p-contact-section') %>
-
-    <%- include('./common/_footer') %>
+    <%- include('./parts/_p-contact-section') %> <%- include('./common/_footer')
+    %>
 
     <%- include('./parts/_c-btn-pageTop') %>
 
@@ -84,7 +88,7 @@
       //       prevEl: '.swiper-button-prev',
       //     },
       // });
-      
+
       // //サムネイル
       // var thumbs = new Swiper ('.c-gallery-thumbs', {
       //     slidesPerView: 'auto',
@@ -93,7 +97,7 @@
       //     loop: true,
       //     slideToClickedSlide: true,
       // });
-      
+
       // //3系
       // // slider.params.control = thumbs;
       // // thumbs.params.control = slider;

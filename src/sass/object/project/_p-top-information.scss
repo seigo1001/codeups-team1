@@ -1,0 +1,30 @@
+.p-top-information {
+  @include mq() {
+    display: flex;
+    justify-content: center;
+  }
+}
+.p-top-information__text {
+  line-height: 1.5;
+  margin-top: rem(16);
+
+  @include mq() {
+    margin-top: 0;
+    margin-right: rem(48);
+  }
+}
+
+.p-top-infomrmation__date {
+  margin-top: rem(3);
+  margin-right: rem(32);
+
+  @include mq() {
+    margin-top: rem(1);
+  }
+}
+
+.p-top-information__text.c-news-information:hover {
+  color: $White;
+
+  text-decoration: underline;
+}

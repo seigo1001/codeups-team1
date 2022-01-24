@@ -1,0 +1,17 @@
+.l-top-blog {
+  padding-right: rem(21);
+  padding-left: rem(19);
+  margin-top: rem(61);
+
+  @include mq() {
+    margin-top: rem(215);
+  }
+}
+
+.l-top-blog__items {
+  margin: rem(59) auto 0;
+
+  @include mq() {
+    margin-top: rem(36);
+  }
+}
