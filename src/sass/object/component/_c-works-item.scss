@@ -1,0 +1,29 @@
+.c-works-item {
+  position: relative;
+  @include mq(tab) {
+    width: 43vw;
+    max-width: rem(525);
+  }
+}
+
+.c-works-item__category {
+  letter-spacing: rem(2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: rem(6) rem(20) rem(6) rem(20);
+}
+
+.c-works-item__name {
+  font-size: rem(20);
+  color: #fff;
+  text-align: center;
+  padding: rem(26) 0 rem(24) rem(3);
+  letter-spacing: rem(2);
+  @include mq() {
+    padding: rem(12) 0 rem(12) rem(3);
+  }
+}

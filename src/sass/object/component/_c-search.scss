@@ -1,0 +1,27 @@
+.search{
+    text-align: left;
+    @include mq(tab)  {
+        padding: 0;
+    }
+}
+.search__item{
+    display: inline-block;
+    padding: rem(2) rem(10);
+    margin-right: rem(20);
+    margin-bottom: rem(18);
+    font-size: rem(16);
+    line-height: rem(23);
+    cursor: pointer;
+    color: #fff;
+    background-color: #111;
+    @include mq(tab) {
+        padding: rem(3) rem(12);
+    }
+}
+.search__item.is-active{
+    color: #000;
+    background-color: #fff;
+}
+.is-hide{
+    display: none;
+}

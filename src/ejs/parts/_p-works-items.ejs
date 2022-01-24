@@ -1,14 +1,31 @@
 <div class="p-works-items">
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_1.png',name:"CodeUps株式会社"}) %>
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_2.png',name:"CodeUps株式会社"}) %>
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_3.png',name:"CodeUps株式会社"}) %>
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_4.png',name:"CodeUps株式会社"}) %>
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_5.png',name:"CodeUps株式会社"}) %>
-  <%-include('./_c-works__item',
-  {category:'カテゴリ１',img:'works_6.png',name:"CodeUps株式会社"}) %>
+  <div class="p-works__item" data-group="1">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ１',img:'works_1.png',name:"CodeUps株式会社"}) %>
+  </div>
+
+  <div class="p-works__item" data-group="1">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ１',img:'works_2.png',name:"CodeUps株式会社"}) %>
+  </div>
+
+  <div class="p-works__item" data-group="2">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ２',img:'works_3.png',name:"CodeUps株式会社"}) %>
+  </div>
+
+  <div class="p-works__item" data-group="2">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ２',img:'works_4.png',name:"CodeUps株式会社"}) %>
+  </div>
+
+  <div class="p-works__item" data-group="2">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ２',img:'works_5.png',name:"CodeUps株式会社"}) %>
+  </div>
+
+  <div class="p-works__item" data-group="3">
+    <%-include('./_c-works-item',
+    {category:'カテゴリ３',img:'works_6.png',name:"CodeUps株式会社"}) %>
+  </div>
 </div>

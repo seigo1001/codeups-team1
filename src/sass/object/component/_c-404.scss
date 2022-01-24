@@ -1,12 +1,39 @@
+.c-404{
+    background-color: #111111;
+    padding: rem(115) 0 rem(10) 0;
+    @include mq(tab){
+        padding: rem(170) 0 rem(127) 0;
+    }
+    .c-btn{
+        padding: 17px 0 16px 0 !important;
+        @include mq(tab){
+            padding: 17px 0 16px 0 !important;
+        }
+    }
+}
 .c-404__title{
-    font-size: rem(60);
+    font-size: rem(40);
     color: #FFEA2E;
-    margin-bottom: rem(80);
+    margin-bottom: rem(64);
     font-weight: 400;
+    letter-spacing: 0.04em;
+    @include mq(tab){
+        font-size: rem(60);
+        color: #FFEA2E;
+        margin-bottom: rem(43);
+        font-weight: 400;
+    }
 }
 
 .c-404__text{
-    font-size: rem(30);
+    font-size: rem(20);
     color: #ffffff;
     margin-bottom: rem(80);
+    letter-spacing: 0.1;
+    line-height: 1.51;
+    @include mq(tab){
+        font-size: rem(30);
+        letter-spacing: 0.06em;
+        margin-bottom: rem(73);
+    }
 }

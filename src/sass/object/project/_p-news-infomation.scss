@@ -1,0 +1,18 @@
+.p-news-infomation {
+  display: block;
+  text-align: left;
+  @include mq(tab){
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+.p-news-information__text{
+  line-height: 1.4;
+}
+.p-news-information__date{
+  margin-bottom: rem(16);
+  @include mq(tab){
+    margin-bottom: rem(0);
+  }
+}
