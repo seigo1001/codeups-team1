@@ -1,0 +1,9 @@
+.l-top-oblique-line-reverse {
+  position: relative;
+}
+
+.l-top-oblique-line-reverse::before {
+  position: absolute;
+  top: rem(1397);
+  z-index: -1;
+}
