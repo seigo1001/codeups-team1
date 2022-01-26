@@ -4,6 +4,10 @@
 
 .l-top-oblique-line-reverse::before {
   position: absolute;
-  top: rem(1397);
+  top: rem(969);
   z-index: -1;
+
+  @include mq() {
+    top: rem(1397);
+  }
 }

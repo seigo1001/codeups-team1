@@ -50,12 +50,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: rem(4) rem(14) rem(11);
-  margin: 0 rem(7) 0 rem(9);
+  padding: rem(4) rem(23) rem(9);
 
   flex-direction: column;
   @include mq(tab) {
-    padding: rem(4.8) rem(9.6) rem(16) rem(9.6);
+    padding: 0;
   }
 }
 .c-blog-card__title {
@@ -67,18 +66,6 @@
   font-weight: 500;
   font-size: rem(18);
 }
-.c-blog-card__text {
-  max-width: rem(322);
-  line-height: 1.9;
-  letter-spacing: 1px;
-  margin-top: rem(3);
-  color: #000000;
-  font-size: rem(14);
-
-  @include mq() {
-    margin-top: rem(7);
-  }
-}
 .c-blog-card__item {
   display: flex;
   justify-content: space-between;
@@ -86,7 +73,8 @@
   margin: rem(7) auto 0;
 
   @include mq() {
-    margin-top: rem(9);
+    padding: 0;
+    margin-top: rem(12);
   }
 }
 .c-blog-card__category {

@@ -5,3 +5,12 @@
     margin-top: rem(37);
   }
 }
+
+.p-top-works__title-wrap {
+  @include mq() {
+    position: absolute;
+    top: rem(-31);
+    right: 7%;
+    z-index: -1;
+  }
+}
