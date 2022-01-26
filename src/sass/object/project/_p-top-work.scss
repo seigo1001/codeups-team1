@@ -2,7 +2,7 @@
   background: $Sub-color;
 
   @include mq() {
-    padding: rem(82) rem(90) rem(80);
+    padding: rem(81) rem(46) rem(77) rem(90);
     background: linear-gradient(
     90deg,
     #000000 0%,
@@ -25,9 +25,6 @@
 
 .p-top-work__wrap {
   position: relative;
-}
-
-.p-top-work__wrap {
   display: flex;
   align-items: center;
 
@@ -62,8 +59,65 @@
 
 .p-top-work__inner {
   position: relative;
+}
+
+.p-top-work__body {
+  padding: rem(20);
+  padding-top: rem(23);
+
+  @include mq(tab) {
+    width: 229%;
+    padding-top: 0;
+    padding-right: rem(47);
+    padding-left: rem(32);
+  }
+}
+
+.p-top-work__body-title {
+  letter-spacing: rem(2);
+  color: #ffffff;
+  font-size: rem(20);
+  text-align: center;
+
+  @include mq(tab) {
+    letter-spacing: 0.02em;
+    margin-top: rem(8);
+    font-size: rem(25);
+    text-align: left;
+  }
+}
+
+.p-top-work__body-text {
+  line-height: 1.43;
+  letter-spacing: 0.12em;
+  margin-top: rem(21);
+  color: #ffffff;
+  font-size: rem(16);
+
+  @include mq(tab) {
+    line-height: 2.1875;
+    letter-spacing: 0.03125em;
+    margin-top: rem(35);
+  }
+}
+
+.p-top-work__btn {
+  margin-top: rem(27);
+  margin-right: rem(1);
+  text-align: center;
+
+  @include mq(tab) {
+    margin-top: rem(48);
+    text-align: left;
+  }
+}
+
+.p-top-work__btn > .c-btn {
+  padding-top: rem(8);
+  padding-bottom: rem(8);
 
   @include mq() {
-    width: 214%;
+    padding-top: rem(15);
+    padding-bottom: rem(17);
   }
 }

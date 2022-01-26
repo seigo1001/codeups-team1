@@ -6,6 +6,11 @@
   height: rem(45);
   background-color: #ffffff;
   transition: background-color 0.3s;
+
+  @include mq() {
+    right: rem(31);
+    bottom: rem(33);
+  }
 }
 
 .c-btn-pageTop:hover {

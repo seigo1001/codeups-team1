@@ -1,4 +1,4 @@
-.p-top-page-list {
+.p-page-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -7,7 +7,7 @@
   }
 }
 
-.p-top-page-list__item {
+.p-page-list__item {
   position: relative;
   width: 50%;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.p-top-page-list__link {
+.p-page-list__link {
   z-index: 20;
   display: block;
   width: 100%;
@@ -24,7 +24,7 @@
   transition: all 0.3s;
 }
 
-.p-top-page-list__link::after {
+.p-page-list__link::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,11 +37,11 @@
   content: "";
 }
 
-.p-top-page-list__link:hover::after {
+.p-page-list__link:hover::after {
   opacity: 1;
 }
 
-.p-top-page-list__title {
+.p-page-list__title {
   position: absolute;
   top: 50%;
   left: 50%;

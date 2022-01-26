@@ -1,4 +1,4 @@
-.c-top-about {
+.p-top-about {
   @include mq(tab) {
     max-width: rem(1280);
     margin-right: auto;
@@ -6,7 +6,7 @@
   }
 }
 
-.c-top-about__wrap {
+.p-top-about__wrap {
   display: flex;
   align-items: center;
   width: 100%;
@@ -14,8 +14,8 @@
 
   flex-direction: column;
   @include mq(tab) {
-    justify-content: flex-start;
-    padding: rem(80) rem(90) rem(174);
+    align-items: center;
+    padding: rem(80) rem(90) rem(79);
     background: linear-gradient(
     90deg,
     #333333 0%,
@@ -28,54 +28,32 @@
   }
 }
 
-.c-top-about__img {
+.p-top-about__picture {
   position: relative;
   width: 100%;
   max-width: 100%;
-
-  @include mq(tab) {
-    max-width: 50%;
-  }
 }
 
-.c-top-about__img:before {
-  display: block;
-  padding-top: 69.6%;
-  content: "";
-}
-
-.c-top-about__img source {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.p-top-about__source {
   width: 100%;
-  transform: translate(-50%, -50%);
-
-  object-fit: cover;
-  object-position: center;
 }
 
-.c-top-about__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.p-top-about__img {
   width: 100%;
-  transform: translate(-50%, -50%);
-
-  object-fit: cover;
-  object-position: center;
 }
 
-.c-top-about__body {
+.p-top-about__body {
   padding: rem(20);
   padding-top: rem(23);
 
   @include mq(tab) {
-    padding-top: 0;
+    width: 94.6%;
+    padding: 0 rem(30) 0 0;
+    margin-top: rem(-14);
   }
 }
 
-.c-top-about-body__title {
+.p-top-about__body-title {
   letter-spacing: rem(2);
   color: #ffffff;
   font-size: rem(20);
@@ -88,20 +66,22 @@
   }
 }
 
-.c-top-about-body__text {
-  line-height: 1.5;
-  letter-spacing: rem(2);
+.p-top-about__body-text {
+  line-height: 1.43;
+  letter-spacing: 0.12em;
   margin-top: rem(21);
   color: #ffffff;
   font-size: rem(16);
 
   @include mq(tab) {
-    margin-top: rem(48);
+    line-height: 2.1875;
+    letter-spacing: 0.03125em;
+    margin-top: rem(35);
   }
 }
 
-.c-top-about-body__btn {
-  margin-top: rem(21);
+.p-top-about__btn {
+  margin-top: rem(27);
   margin-right: rem(1);
   text-align: center;
 
@@ -111,7 +91,12 @@
   }
 }
 
-.c-top-about-body__btn > .c-btn {
+.p-top-about__btn > .c-btn {
   padding-top: rem(8);
   padding-bottom: rem(8);
+
+  @include mq() {
+    padding-top: rem(15);
+    padding-bottom: rem(17);
+  }
 }
