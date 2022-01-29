@@ -1,7 +1,10 @@
-.c-copyright{
-    color: #ffffff;
-    font-size: rem(11);
-    @include mq(){
-        font-size: rem(15);
-    }
+.c-copyright {
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  font-size: rem(11);
+
+  @include mq() {
+    letter-spacing: 0.09em;
+    font-size: rem(15);
+  }
 }

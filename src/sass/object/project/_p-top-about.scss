@@ -1,11 +1,3 @@
-.p-top-about {
-  @include mq(tab) {
-    max-width: rem(1280);
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .p-top-about__wrap {
   display: flex;
   align-items: center;

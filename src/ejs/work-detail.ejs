@@ -5,8 +5,7 @@
     <%- include('./common/_header') %> <% const blogInfo = { date: '2020.07.20',
     category: 'カテゴリ' } %>
     <section class="p-work-detail">
-      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:"制作実績 >
-      制作実績詳細"}) %>
+      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:"制作実績 > 制作実績詳細"}) %>
 
       <div class="p-work-detail__layer">
         <div class="c-work-detail-title p-work-detail__title">
@@ -20,10 +19,12 @@
         {title: 'その他'}) %> <%- include('./parts/_c-pagination-simple') %>
       </div>
 
-      <%- include('./parts/_c-btn-article') %>
-      <div class="p-work-detail__cards">
-        <% for(var i = 0; i < 4; i++) { %> <%- include('./parts/_p-work-cards')
-        %> <% } %>
+      <div class="l-blog-detail__relation">
+        <%- include('./parts/_c-btn-article') %>
+          <div class="p-work-detail__cards">
+            <% for(var i = 0; i < 4; i++) { %> <%-
+            include('./parts/_c-article-card') %> <% } %>
+          </div>
       </div>
     </section>
 

@@ -13,6 +13,11 @@
     margin-right: rem(48);
   }
 }
+.p-top-information__text.c-news-information {
+  @include mq() {
+    align-items: flex-start;
+  }
+}
 
 .p-top-infomrmation__date {
   margin-top: rem(3);
