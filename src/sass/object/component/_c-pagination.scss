@@ -21,8 +21,16 @@
 .c-pagination__next,
 .c-pagination__page {
   border: 1px solid #ffffff;
-
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.c-pagination__prev:hover,
+.c-pagination__next:hover,
+.c-pagination__page:hover{
+  background: #ffffff;
+  color: #333333;
+  transition: .3s;
 }
 
 .c-pagination__pages {

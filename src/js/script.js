@@ -81,6 +81,7 @@ jQuery(function ($) {
 
 var searchItem = ".search__item"; //絞り込み項目を選択するエリア
 var listItem = ".p-blog__item"; //絞り込み対象のアイテム
+var workItem = ".p-works__item" //絞り込み対象のアイテム
 var hideClass = "is-hide"; //絞り込み対象外の場合に付与されるclass名
 var activeClass = "is-active"; //選択中のグループに付与されるclass名
 
@@ -96,6 +97,7 @@ $(function () {
 function search_filter(group) {
   //非表示状態を解除
   $(listItem).removeClass(hideClass);
+  $(workItem).removeClass(hideClass);
   //値が空の場合はすべて表示
   if (group === "") {
     return;
@@ -107,6 +109,14 @@ function search_filter(group) {
     //絞り込み対象がどうかを調べる
     if (itemData !== group) {
       $(listItem).eq(i).addClass(hideClass);
+    }
+  }
+  for (var i = 0; i < $(workItem).length; i++) {
+    //アイテムに設定している項目を取得
+    var itemData = $(workItem).eq(i).data("group");
+    //絞り込み対象がどうかを調べる
+    if (itemData !== group) {
+      $(workItem).eq(i).addClass(hideClass);
     }
   }
 }
