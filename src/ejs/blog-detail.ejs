@@ -65,15 +65,16 @@
 
         <%- include('./parts/_c-pagination-simple') %>
 
-        <div class="l-blog-detail__relation">
-          <%- include('./parts/_c-btn-article') %>
-          <div class="p-blog-detail__cards">
-            <% for(var i = 0; i < 4; i++) { %>
-              <%- include('./parts/_c-article-card') %>
-            <% } %>
-          </div>
+        
+      </div>
+      
+      <div class="l-blog-detail__relation">
+        <%- include('./parts/_c-btn-article') %>
+        <div class="p-blog-detail__cards">
+          <% for(var i = 0; i < 4; i++) { %>
+            <%- include('./parts/_c-article-card') %>
+          <% } %>
         </div>
-
       </div>
 
     </section>
