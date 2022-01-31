@@ -1,6 +1,9 @@
 .p-contact-form {
   background: #111111;
   color: #ffffff;
+  @include mq(pc){
+    padding-bottom: rem(105);
+  }
 }
 
 .l-contact-form {

@@ -5,8 +5,14 @@
     margin-left: rem(43);
     margin-right: rem(43);
     letter-spacing: 0.2em;
+    transition: .3s;
     @include mq(tab){
         margin-left: rem(55);
         margin-left: rem(55);
     }
+}
+.c-pagination__all:hover{
+    background: #ffffff;
+    color: #333333;
+    transition: .3s;
 }
