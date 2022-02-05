@@ -11,8 +11,7 @@
   @include mq(pc) {
     width: 100%;
     max-width: rem(690);
-    margin-right: rem(370);
-    margin-left: auto;
+    margin: auto;
   }
 }
 
