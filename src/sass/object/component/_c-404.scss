@@ -2,7 +2,7 @@
     background-color: #111111;
     padding: rem(115) 0 rem(10) 0;
     @include mq(tab){
-        padding: rem(170) 0 rem(127) 0;
+        padding: rem(170) 0 rem(147) 0;
     }
     .c-btn{
         padding: 17px 0 16px 0 !important;
@@ -29,7 +29,7 @@
     font-size: rem(20);
     color: #ffffff;
     margin-bottom: rem(80);
-    letter-spacing: 0.1;
+    letter-spacing: 0.1em;
     line-height: 1.51;
     @include mq(tab){
         font-size: rem(30);

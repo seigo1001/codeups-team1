@@ -23,7 +23,7 @@
     margin: 0 0 34px 0;
 
     @include mq(tab) {
-      margin: 0 0 10px 0;
+      margin: 0 0 43px 0;
     }
 
     .swiper-slide {
@@ -32,14 +32,16 @@
 
       @include mq(tab) {
         width: auto;
-        height: 400px;
+        height: auto;
       }
       img {
         display: block;
         width: auto;
         height: 100%;
         margin: 0 auto;
-
+        margin-top: rem(33);
+        margin-bottom: rem(100);
+        overflow: hidden;
         object-fit: cover;
       }
     }
@@ -56,7 +58,6 @@
       width: 100%;
       height: rem(90);
       padding: 0;
-
       overflow: hidden;
     }
 
@@ -107,28 +108,26 @@
   }
 }
 
-.swiper-button-prev {
-  left: 20px !important;
-
-  @include mq(tab) {
-    left: 50px !important;
-  }
+.swiper-button-prev{
+    left: 20px !important;
+    @include mq(tab){
+        left: 25px !important;
+    }
 }
-.swiper-button-next {
-  right: 20px !important;
-
-  @include mq(tab) {
-    right: 50px !important;
-  }
+.swiper-button-next{
+    right: 20px !important;
+    @include mq(tab){
+        right: 25px !important;
+    }
 }
 
 .swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 20px !important;
+.swiper-button-next:after{
+    font-size: 20px !important;
+    @include mq(tab){
+        font-size: 33px !important;
+    }
 
-  @include mq(tab) {
-    font-size: 36px !important;
-  }
 }
 
 .swiper-button-next::after,
