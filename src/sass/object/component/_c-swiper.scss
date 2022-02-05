@@ -2,16 +2,15 @@
 .c-gallery {
   width: 100vw;
   margin: 0 calc(50% - 50vw);
-  margin-top: rem(18);
+  margin-top: rem(-14);
   margin-bottom: rem(58);
-
   overflow: hidden;
   @include mq(tab) {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: rem(40);
-
+    margin-top: rem(0);
+    margin-bottom: rem(105);
     overflow: hidden;
   }
 
@@ -20,24 +19,22 @@
     position: relative;
     width: 100%;
     height: auto;
-    margin: 0 0 34px 0;
-
+    margin: 0 0 67px 0;
     @include mq(tab) {
-      margin: 0 0 43px 0;
+      margin: 0 0 75px 0;
     }
 
     .swiper-slide {
       width: auto;
       height: 250px;
-
       @include mq(tab) {
         width: auto;
-        height: auto;
+        height: 427px;
       }
       img {
         display: block;
         width: auto;
-        height: 100%;
+        height: inherit;
         margin: 0 auto;
         margin-top: rem(33);
         margin-bottom: rem(100);
@@ -109,21 +106,26 @@
 }
 
 .swiper-button-prev{
-    left: 20px !important;
+    top: 63% !important;
+    left: 10px !important;
     @include mq(tab){
-        left: 25px !important;
+        top: 58% !important;
+        left: 50px !important;
     }
 }
 .swiper-button-next{
-    right: 20px !important;
+    top: 63% !important;
+    right: 10px !important;
     @include mq(tab){
-        right: 25px !important;
+        top: 58% !important;
+        right: 50px !important;
     }
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after{
-    font-size: 20px !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
     @include mq(tab){
         font-size: 33px !important;
     }
