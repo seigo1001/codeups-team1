@@ -1,21 +1,18 @@
 .p-contact-form {
   background: #111111;
   color: #ffffff;
-  @include mq(pc){
+
+  @include mq(pc) {
     padding-bottom: rem(105);
   }
 }
 
-.l-contact-form {
-  width: 100%;
-  margin: auto;
-}
 .p-contact-form__wrap {
   @include mq(pc) {
     width: 100%;
     max-width: rem(690);
-    padding: rem(80) 0 0 0;
-    margin: auto;
+    margin-right: rem(370);
+    margin-left: auto;
   }
 }
 
@@ -54,47 +51,43 @@ label {
   }
 }
 
-input {
+.p-contact-form__input {
   width: 100%;
   max-width: rem(600);
   line-height: 1.9;
+  padding: rem(8) rem(9) !important;
   font-size: rem(14);
 
   @include mq(pc) {
     width: 100%;
     max-width: rem(540);
+    padding: rem(6) rem(16) !important;
   }
 }
 
-textarea {
+.p-contact-form__textarea {
   width: 100%;
   max-width: rem(600);
   line-height: 1.9;
-  padding: rem(16) 0 rem(208) rem(4);
+  padding: rem(16) 0 rem(183) rem(4);
   font-size: rem(14);
 
   @include mq(pc) {
     width: 100%;
     max-width: rem(540);
-    padding-top: rem(8);
-  }
-}
-
-.l-content-form-btn {
-  padding: rem(36)  rem(20) rem(48);
-  text-align: center;
-
-  @include mq(pc) {
-    padding: rem(36)  rem(20) rem(48) rem(160);
+    padding: rem(8) rem(16) rem(238);
   }
 }
 
 .content-form-btn {
-  padding: rem(15) rem(150);
+  padding: rem(11) rem(150);
   border: 2px solid transparent;
   font-size: rem(16);
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
+  @include mq(pc) {
+    padding: rem(14) rem(162);
+  }
   white-space: nowrap;
 }
 

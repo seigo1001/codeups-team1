@@ -17,6 +17,7 @@ new Swiper(".p-mv__container", swipeOption);
 const swiper = new Swiper(".p-top-work__slider", {
   // スライドメニューの表示方法
   direction: "horizontal",
+  slidesPerView: 1,
   loop: true,
   autoHeight: true,
   autoplay: {

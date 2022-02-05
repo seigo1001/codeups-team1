@@ -33,3 +33,13 @@
 
   text-decoration: underline;
 }
+
+.p-top-information__btn {
+  margin-top: rem(28);
+  margin-left: rem(1);
+  text-align: center;
+
+  @include mq() {
+    display: none;
+  }
+}

@@ -19,10 +19,10 @@
           >記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a
         >
       </p>
-      <div class="l-top-information__btn">
+      <div class="p-top-information__btn">
         <%- include('./parts/_c-btn.ejs' ,{link:'#', text:'すべて見る'}) %>
       </div>
-      <div class="l-top-information__more-btn">
+      <div class="p-top-information__more-btn">
         <a href="./news.html" class="c-more-btn c-more-btn--bgleft">
           <span class="c-more-btn__text">すべて見る</span>
         </a>
@@ -55,7 +55,8 @@
 
               <img
                 src="../images/top/page-list-image1.png"
-                alt=""
+                alt="電球を両手に乗せた画像"
+                title="経営ページへ"
                 class="p-page-list__img"
               />
             </picture>
@@ -72,7 +73,8 @@
 
               <img
                 src="../images/top/page-list-image2.png"
-                alt=""
+                alt="ともにパソコン作業をしている3人の画像"
+                title="理念1へ"
                 class="p-page-list__img"
               />
             </picture>
@@ -89,7 +91,8 @@
 
               <img
                 src="../images/top/page-list-image3.png"
-                alt=""
+                alt="スクリーンに映るチャートグラフの画像"
+                title="理念2へ"
                 class="p-page-list__img"
               />
             </picture>
@@ -106,7 +109,8 @@
 
               <img
                 src="../images/top/page-list-image4.png"
-                alt=""
+                alt="机においてあるパソコンとスマホで株価を確認している画像"
+                title="理念3へ"
                 class="p-page-list__img"
               />
             </picture>
@@ -165,7 +169,8 @@
       </div>
       <%- include('./parts/_p-top-blog-items') %>
       <div class="p-top-blog__btn">
-        <%- include('./parts/_c-btn.ejs' ,{link:'./blog.html', text:'詳しく見る'}) %>
+        <%- include('./parts/_c-btn.ejs' ,{link:'./blog.html',
+        text:'詳しく見る'}) %>
       </div>
     </div>
 
