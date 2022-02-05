@@ -1,5 +1,22 @@
-.p-blog-detail{
-    background-color: #111111;
-    padding-top: rem(50);
-    padding-bottom: rem(120);
+.p-blog-detail {
+  padding-top: rem(50);
+  padding-bottom: rem(120);
+  background-color: #111111;
+  max-width: rem(800);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p-blog-detail__cards {
+  display: block;
+  width: 100%;
+  margin: rem(32) auto 0;
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: rem(1100);
+    margin: rem(80) auto 0;
+  }
 }

@@ -67,6 +67,10 @@
 
 .c-btn__hover {
   display: none;
+
+  @include mq() {
+    font-size: rem(20);
+  }
 }
 
 .c-btn--bgleft:hover > .c-btn__hover {

@@ -1,6 +1,8 @@
 .c-more-btn {
   position: relative;
   display: none;
+  min-width: 132px;
+  text-align: center;
 
   @include mq() {
     display: inline-block;

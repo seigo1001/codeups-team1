@@ -19,10 +19,12 @@
         <%- include('./parts/_c-pagination-simple') %>
       </div>
 
-      <%- include('./parts/_c-btn-article') %>
-      <div class="p-work-detail__cards">
-        <% for(var i = 0; i < 4; i++) { %> <%- include('./parts/_p-work-cards')
-        %> <% } %>
+      <div class="l-blog-detail__relation">
+        <%- include('./parts/_c-btn-article') %>
+          <div class="p-work-detail__cards">
+            <% for(var i = 0; i < 4; i++) { %> <%-
+            include('./parts/_c-article-card') %> <% } %>
+          </div>
       </div>
     </section>
 

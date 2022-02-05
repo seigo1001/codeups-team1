@@ -10,40 +10,42 @@
       <div class="p-blog-detail">
         <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'ブログ記事一覧 > ブログ記事詳細'}) %>
 
-        <div class="c-blog-head l-inner">
+        <div class="l-blog-detail__side c-blog-head">
 
-          <h2 class="c-blog-head__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
-          
+
+            <h2 class="c-blog-head__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+
+
           <%- include('./parts/_c-news-DateCat') %>
 
           <div class="c-blog-eyeCatch">
             <img src="../images/common/blog-eyecatch_pc.jpg" alt="eyecatch" class="pc-only">
             <img src="../images/common/blog-eyecatch_sp.jpg" alt="eyecatch" class="sp-only">
           </div>
-          
+
           <div class="c-blog-head__body">
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div>
 
         </div>
-        
-        <div class="c-blog-body l-inner">
+
+        <div class="l-blog-detail__side c-blog-body">
 
           <div class="c-blog-body__title">
             <h3>見出し2</h3>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div>
-          
+
           <div class="c-blog-body__subtitle">
             <h3><span>見出し３ 見出し３ 見出し３</span></h3>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div>
-          
+
           <div class="c-blog-eyeCatch">
             <img src="../images/common/blog-image_pc.jpg" alt="blogimage" class="pc-only">
             <img src="../images/common/blog-image_sp.jpg" alt="blogimage" class="sp-only">
           </div>
-          
+
           <div class="blog-body__body">
             <ul class="bullet-list">
               <li>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
@@ -58,24 +60,27 @@
               <li>リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
             </ol>
           </div>
-          
+
         </div>
-        
+
         <%- include('./parts/_c-pagination-simple') %>
 
-        <%- include('./parts/_c-btn-article') %>
-        <div class="p-related-article">
-          <% for(var i = 0; i < 4; i++) { %>
-            <%- include('./parts/_p-work-cards') %>
-          <% } %>
-        </div>
         
       </div>
       
+      <div class="l-blog-detail__relation">
+        <%- include('./parts/_c-btn-article') %>
+        <div class="p-blog-detail__cards">
+          <% for(var i = 0; i < 4; i++) { %>
+            <%- include('./parts/_c-article-card') %>
+          <% } %>
+        </div>
+      </div>
+
     </section>
       <%- include('./parts/_p-contact-section') %>
       <%- include('./common/_footer') %>
       <%- include('./parts/_c-btn-pageTop') %>
-      
+
   </body>
 </html>

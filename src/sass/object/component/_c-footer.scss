@@ -1,11 +1,20 @@
-.c-footer-nav__item{
-    color: #ffffff;
-    font-size: 16px;
-    list-style-type: none;
-    margin-bottom: rem(5);
-    font-family: $font-family-base;
-    @include mq(){
-        margin-bottom: rem(0);
-        margin-right: rem(32);
-    }
+.c-footer-nav__item {
+  letter-spacing: 0.05em;
+  margin-bottom: rem(5);
+  color: #ffffff;
+  font-size: 16px;
+
+  list-style-type: none;
+  font-family: $font-family-base;
+  @include mq() {
+    letter-spacing: 0.09em;
+    margin-right: rem(32);
+    margin-bottom: rem(0);
+  }
+}
+
+.c-footer-nav__item:last-child {
+  @include mq() {
+    margin-right: 0;
+  }
 }

@@ -9,15 +9,17 @@
 
 .p-work-detail__cards {
   display: block;
-  max-width: rem(335);
   width: 100%;
-  margin: 0 auto;
-  @include mq(tab){
+  padding: 0 rem(20);
+  margin: rem(32) auto 0;
+
+  @include mq(tab) {
     display: flex;
     justify-content: center;
+    width: 100%;
     max-width: rem(1100);
-    width: 95%;
-    margin: 0 auto;
+    padding: 0;
+    margin: rem(80) auto 0;
   }
 }
 
@@ -35,16 +37,17 @@
 }
 
 .p-work-detail__layer {
-  max-width: rem(335);
   width: 100%;
+  max-width: rem(335);
   margin: 0 auto;
+
   @include mq(tab) {
     width: 100%;
     max-width: rem(800);
     margin: 0 auto;
   }
 }
-.p-work-detail__title{
+.p-work-detail__title {
   margin-top: rem(41);
   margin-bottom: rem(20);
   font-size: rem(20);
@@ -53,14 +56,14 @@
   }
 }
 
-.p-work-detail .c-news-DateCat__date{
-  font-size: rem(17) !important;
+.p-work-detail .c-news-DateCat__date {
   margin-right: rem(34) !important;
+  font-size: rem(17) !important;
 }
-.p-work-detail .c-news-DateCat__category{
+.p-work-detail .c-news-DateCat__category {
   font-size: rem(18) !important;
 }
-.p-work-detail .c-pagination__all{
-  padding-left: rem(15) !important;
+.p-work-detail .c-pagination__all {
   padding-right: rem(15) !important;
+  padding-left: rem(15) !important;
 }

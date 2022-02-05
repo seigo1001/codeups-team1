@@ -1,33 +1,36 @@
 .p-about {
-    background-color: #000;
-    @include mq(tab) {
-        margin-bottom: rem(88);
-    }
+  background-color: $background;
+
+  @include mq(tab) {
+    margin-bottom: rem(88);
+  }
 }
 
 .p-about__wrap {
-    margin-top: rem(72);
-    @include mq(tab) {
-        margin-top: rem(106);
-    }
+  margin-top: rem(72);
+
+  @include mq(tab) {
+    margin-top: rem(106);
+  }
 }
 
 .p-about-wrap__table {
-    max-width: rem(375);
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 rem(20);
-    @include  mq(tab) {
-        max-width: rem(1140);
-    }
+  width: 100%;
+  max-width: rem(375);
+  padding: 0 rem(20);
+  margin: 0 auto;
+
+  @include mq(tab) {
+    max-width: rem(1140);
+  }
 }
 
 .p-about-wrap__map {
-    margin-top: rem(118);
-    padding-bottom: rem(120);
-    @include mq(tab) {
-        margin-top: rem(120);
-        padding-bottom: rem(60);
-    }
-}
+  padding-bottom: rem(120);
+  margin-top: rem(118);
 
+  @include mq(tab) {
+    padding-bottom: rem(60);
+    margin-top: rem(120);
+  }
+}

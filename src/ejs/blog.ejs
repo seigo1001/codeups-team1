@@ -9,12 +9,13 @@
       <%- include('./parts/_c-subFV', {pageTitle:'ブログ'}) %>
 
       <div class="p-blog__wrap">
-        <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'ブログ記事一覧'})
-        %> <%- include('./parts/_c-grouping') %> <%-
-        include('./parts/_p-blog-items') %>
+        <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'ブログ記事一覧'})%> 
+        <%- include('./parts/_c-grouping') %> 
+        <%- include('./parts/_p-blog-items') %>
       </div>
-
-      <%- include('./parts/_c-pagination') %>
+      <div class="l-blog-pagination">
+        <%- include('./parts/_c-pagination') %>
+      </div>
     </section>
 
     <%- include('./parts/_p-contact-section') %> <%- include('./common/_footer')

@@ -4,6 +4,7 @@ let swipeOption = {
   slidesPerView: 1,
   loopedSlides: 3,
   effect: "fade",
+  simulateTouch: false,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -18,9 +19,10 @@ const swiper = new Swiper(".p-top-work__slider", {
   direction: "horizontal",
   loop: true,
   autoHeight: true,
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  autoplay: {
+    delay: 4000,
+  },
+  speed: 1000,
   // スライドのページネーション表示
   pagination: {
     el: ".p-top-work__pagination",
