@@ -2,22 +2,21 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_header') %> <% const blogInfo = { date: '2020.07.20',
-    category: 'カテゴリ' } %>
+    <%- include('./common/_header') %> 
+    <% const blogInfo = { date: '2020.07.20',category: 'カテゴリ' } %>
     <section class="p-work-detail">
-      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:"制作実績 >
-      制作実績詳細"}) %>
+      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:"制作実績 > 制作実績詳細"}) %>
 
       <div class="p-work-detail__layer">
         <div class="c-work-detail-title p-work-detail__title">
           〇〇株式会社様 制作実績
         </div>
-        <%- include('./parts/_c-news-DateCat') %> <%-
-        include('./parts/_c-swiper') %> <%-
-        include('./parts/_c-works-detail-point', {title: '制作のポイント'}) %>
-        <%- include('./parts/_c-works-detail-point', {title:
-        'デザインのポイント'}) %> <%- include('./parts/_c-works-detail-point',
-        {title: 'その他'}) %> <%- include('./parts/_c-pagination-simple') %>
+        <%- include('./parts/_c-news-DateCat') %> 
+        <%-include('./parts/_c-swiper') %>
+        <%-include('./parts/_c-works-detail-point', {title: '制作のポイント'}) %>
+        <%- include('./parts/_c-works-detail-point', {title: 'デザインのポイント'}) %> 
+        <%- include('./parts/_c-works-detail-point', {title: 'その他'}) %> 
+        <%- include('./parts/_c-pagination-simple') %>
       </div>
 
       <%- include('./parts/_c-btn-article') %>
@@ -26,6 +25,7 @@
         %> <% } %>
       </div>
     </section>
+
 
     <%- include('./parts/_p-contact-section') %> <%- include('./common/_footer')
     %> <%- include('./parts/_c-btn-pageTop') %>

@@ -21,7 +21,7 @@
     font-weight: 400;
     font-size: rem(20);
     line-height: rem(28.96);
-    letter-spacing: 2;
+    letter-spacing: 2em;
     text-align: center;
     @include mq(tab) {
         font-size: rem(30);

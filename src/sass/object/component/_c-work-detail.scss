@@ -5,8 +5,14 @@
   letter-spacing: 0.02em;
   border: 1px solid #ffffff;
   @include mq(tab){
-    margin-top: rem(100);
+    margin-bottom: rem(72);
     padding: rem(44) rem(22) rem(32) rem(22);
+  }
+}
+
+.c-works-detail-point:last-child{
+  @include mq(tab){
+    margin-bottom: rem(10);
   }
 }
 
@@ -29,7 +35,7 @@
 
 .c-works-detail-point__text {
   line-height: rem(35);
-  letter-spacing: 0.4;
+  letter-spacing: 0.04em;
   color: #ffffff;
   font-size: rem(16);
 }
